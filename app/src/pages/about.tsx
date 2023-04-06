@@ -4,13 +4,25 @@ import { useState, useEffect, useLayoutEffect, useRef } from "react";
 import React from "react";
 import { Layout } from "@/components/layout";
 import Background from "@/components/HomeBackground"
-import { Footer } from "@/components/footer";
-import Button from "@/components/Button";
+import ColoredLine from "@/components/horizontalRule";
 import anime from 'animejs';
 
 const SingleCard = ({ name = "", position = "", image = "/favicon-16x16.png", description }) => {
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    anime({
+      targets: cardRef.current,
+      translateX: [-50, 0],
+      opacity: [0, 1],
+      easing: 'easeOutElastic(1, .8)',
+      duration: 1500,
+      delay: 500,
+    });
+  }, []);
+
   return (
-    <div className="md:flex md:flex-row ml-4 py-4 px-4">
+    <div className="md:flex md:flex-row ml-4 py-4 px-4" ref={cardRef}>
       <div className="rounded-full mr-3 border-black flex flex-row justify-center items-center">
         <Image src={image} alt="" width={150} height={150} layout="fixed" className="rounded-full" />
       </div>
@@ -22,6 +34,7 @@ const SingleCard = ({ name = "", position = "", image = "/favicon-16x16.png", de
     </div>
   );
 };
+
 
 
 const NationalDirectors: NextPage<any> = () => {
@@ -57,6 +70,7 @@ const AboutUs: NextPage<any> = () => {
               We're proud to introduce our fantastic staff:
             </p>
           </div>
+
 
           <NationalDirectors />
         </main>
