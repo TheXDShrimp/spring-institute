@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Layout } from "@/components/layout";
 import Background from "@/components/HomeBackground";
+import anime from 'animejs'
 import { Footer } from "@/components/footer";
 import Button from "@/components/Button";
 
@@ -13,8 +14,6 @@ const Form = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-
     if (!name || !email) {
       setFeedback("Please enter your name and email");
       return;
@@ -52,7 +51,7 @@ const Form = () => {
           setTimeout(() => {
             setConfirmation('');
           }, 2000);
-        
+
 
           // redirect to index
           window.location.href = '/';
@@ -69,37 +68,70 @@ const Form = () => {
     return;
   };
 
+
+  const nameRef = useRef(null), emailRef = useRef(null), buttonRef = useRef(null);
+
+  useEffect(() => {
+    anime({
+      targets: nameRef.current,
+      translateY: [-50, 0],
+      opacity: [0, 1],
+      easing: 'easeOutElastic(1, .8)',
+      duration: 1500,
+    });
+
+    anime({
+      targets: emailRef.current,
+      translateY: [50, 0],
+      opacity: [0, 1],
+      easing: 'easeOutElastic(1, .8)',
+      duration: 1500,
+      delay: 500,
+    });
+
+    anime({
+      targets: buttonRef.current,
+      translateY: [50, 0],
+      opacity: [0, 1],
+      duration: 500,
+      easing: 'easeOutElastic(1, .8)',
+      delay: 1000,
+    });
+  }, []);
+
+
+
   return (
     <div>
-      <form onSubmit={handleSubmit} className="flex flex-col items-center">
-        <div>
+      <form onSubmit={handleSubmit} className="flex flex-col items-center pb-4">
+        <div className={`py-2`}>
           <input
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Name"
+            ref={nameRef}
             className="px-4 py-2 rounded-lg border-gray-400 border-2 my-2"
           />
-          <p>
-
-          </p>
+          <p ref={emailRef}></p>
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
+            ref={emailRef}
             className="px-4 py-2 rounded-lg border-gray-400 border-2 my-2"
           />
         </div>
-        <button type="submit" className="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <button type="submit" ref={buttonRef} className="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           Submit
         </button>
       </form>
 
-      {feedback && <p className="text-red-500">{feedback}</p>}
-      {confirmation && <p className="text-green-500">{confirmation}</p>}
+      <p className="text-red-500">{feedback}</p>
+      <p className="text-green-500">{confirmation}</p>
     </div>
-  )
+  );
 }
 
 const Encap = () => {
