@@ -2,7 +2,7 @@
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://root:root123@localhost:3306/springstuffs"
+  url      = "YOUR_DATABASE_URL_HERE"
 }
 
 generator client {
