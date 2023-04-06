@@ -1,0 +1,16 @@
+// https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "mysql"
+  url      = "mysql://root:root123@localhost:3306/springstuffs"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Users {
+  id    Int    @id @default(autoincrement())
+  name  String
+  email String @unique
+}
