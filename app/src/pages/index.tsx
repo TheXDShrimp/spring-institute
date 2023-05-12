@@ -7,10 +7,15 @@ import Background from "@/components/HomeBackground"
 import { Footer } from "@/components/footer";
 import Button from "@/components/Button";
 import anime from 'animejs';
+import AutoScroll from "@/components/AutoScroll";
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 const HomeSection: NextPage<any> = () => {
   const titleRef = useRef(null);
   const buttonRef = useRef(null);
+  const [showScrollButton, setShowScrollButton] = useState(true);
+
 
   useEffect(() => {
     anime({
@@ -29,18 +34,46 @@ const HomeSection: NextPage<any> = () => {
       easing: 'easeOutElastic(1, .8)',
       delay: 500,
     });
+
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowScrollButton(false);
+      } else {
+        setShowScrollButton(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
+
+
+  const scrollButton = () => {
+    const aboutUsSection = document.getElementById('about-us-section');
+    aboutUsSection.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <section className='w-full h-screen'>
-      <div className='relative w-full m-0 h-screen'>
-        <main className='relative w-full min-h-screen bg-transparent'>
+      <div className='relative w-full h-screen'>
+        <main className='min-h-screen bg-transparent'>
           <div className="h-screen flex flex-col justify-center items-center">
             <h1 ref={titleRef} className="text-white text-center text-8xl font-black">Your voice matters.</h1>
             <Button ref={buttonRef} name="Get involved ->" className="mt-6" link="/form" />
           </div>
         </main>
+
+
+        <div className={`absolute bottom-0 left-0 right-0 text-center mb-12 ${showScrollButton ? '' : 'hidden'}`}>
+          <button onClick={scrollButton} className="text-white font-bold text-xl rounded-full py-3 px-4 bg-gray-900 hover:bg-gray-800">
+            ↓
+          </button>
+        </div>
       </div>
+      <ToastContainer />
     </section>
   );
 };
@@ -70,19 +103,26 @@ const AboutUsSection: NextPage<any> = () => {
 
 
   return (
-    <section className='w-full h-screen'>
-      <div className='relative w-full m-0 h-screen'>
-        <main className='relative w-full min-h-screen bg-transparent'>
-          <div className="h-screen flex flex-col justify-center items-center">
-            <h1 ref={headingRef} className="text-white text-center text-7xl font-black">Our Mission</h1>
-            <p className="text-white text-center text-lg font-medium max-w-2xl mt-8">
-              Across the board, the youth is becoming more involved in politics: more than 55% of all youth turned out to vote in 2020. Yet, even as the youth voice is increasingly decisive in elections outcomes, there is a lack of opportunity for students to engage in the policy making process at the highest level. This is crucial - youth engagement, especially in high school, builds more engaged voters and a more democratic society.
+    <section id="about-us-section" className="w-full h-screen">
+      <div className="relative w-full h-full">
+        <main className="relative min-h-screen bg-transparent flex flex-col justify-center items-center">
+          <h1 ref={headingRef} className="text-white text-7xl font-black text-center">
+            Our Mission
+          </h1>
+          <div className="mt-8 max-w-2xl">
+            <p className="text-white text-lg font-medium text-center">
+              Across the board, the youth is becoming more involved in politics: more than 55% of all youth turned out to
+              vote in 2020. Yet, even as the youth voice is increasingly decisive in elections outcomes, there is a lack
+              of opportunity for students to engage in the policy making process at the highest level. This is crucial -
+              youth engagement, especially in high school, builds more engaged voters and a more democratic society.
             </p>
-            <p className="text-white text-center text-lg font-medium max-w-2xl mt-8">
-              We are building a global, 100% youth-powered movement to close this gap in policy worldwide. By providing a platform for the youth to spring into action, we cultivate and nurture the next generation of leaders, thinkers, and advocates.
+            <p className="mt-8 text-white text-lg font-medium text-center">
+              We are building a global, 100% youth-powered movement to close this gap in policy worldwide. By providing a
+              platform for the youth to spring into action, we cultivate and nurture the next generation of leaders,
+              thinkers, and advocates.
             </p>
-            <Button ref={buttonRef} name="Get Involved ->" className="mt-6" link="/form" />
           </div>
+          <Button ref={buttonRef} name="Get Involved ->" className="mt-6" link="/form" />
         </main>
       </div>
     </section>
@@ -92,9 +132,11 @@ const AboutUsSection: NextPage<any> = () => {
 const Home: NextPage = () => {
   return (
     <Layout title="Home">
-      <Background />
-      <HomeSection />
-      <AboutUsSection />
+      <AutoScroll>
+        <Background />
+        <HomeSection />
+        <AboutUsSection />
+      </AutoScroll>
     </Layout>
   );
 };
