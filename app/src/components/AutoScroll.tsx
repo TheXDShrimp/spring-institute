@@ -12,7 +12,7 @@ const AutoScroll = ({ children }) => {
       });
     }, { threshold: 0.5 });
 
-     const sections = Array.from(document.querySelectorAll("section"));
+    const sections = Array.from(document.querySelectorAll("section"));
     sections.forEach((section) => observer.observe(section));
 
     const handleScroll = () => {
