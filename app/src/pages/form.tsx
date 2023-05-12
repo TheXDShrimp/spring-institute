@@ -2,25 +2,23 @@ import { useState, useRef, useEffect } from "react";
 import { Layout } from "@/components/layout";
 import Background from "@/components/HomeBackground";
 import anime from 'animejs'
-import { Footer } from "@/components/footer";
-import Button from "@/components/Button";
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
 
 const Form = () => {
-  const [feedback, setFeedback] = useState("");
-  const [confirmation, setConfirmation] = useState("");
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!name || !email) {
-      setFeedback("Please enter your name and email");
+      toast.error("Please enter your name and email");
       return;
     }
 
     if (!/\S+@\S+\.\S+/.test(email)) {
-      setFeedback("Please enter a valid email address");
+      toast.error("Please enter a valid email address");
       return;
     }
 
@@ -40,18 +38,14 @@ const Form = () => {
         console.log(data);
 
         if (data.exists) {
-          setFeedback(`User with email ${email} already exists`);
-          console.log('Email already exists');
+          toast.error(`User with email ${email} already exists`);
+          console.log(`Email ${email} already exists`);
         } else {
           console.log('Form data saved successfully');
+          toast.success("Form data saved successfully!");
 
-          // placeholder under we get a confirmation page
-          // wait 2 seconds before redirecting
-          setConfirmation('Form data saved successfully!');
-          setTimeout(() => {
-            setConfirmation('');
-          }, 2000);
-
+          // wait 3 seconds before redirecting
+          await new Promise((resolve) => setTimeout(resolve, 5000));
 
           // redirect to index
           window.location.href = '/';
@@ -97,6 +91,8 @@ const Form = () => {
       easing: 'easeOutElastic(1, .8)',
       delay: 1000,
     });
+
+
   }, []);
 
 
@@ -127,9 +123,6 @@ const Form = () => {
           Submit
         </button>
       </form>
-
-      <p className="text-red-500">{feedback}</p>
-      <p className="text-green-500">{confirmation}</p>
     </div>
   );
 }
@@ -148,6 +141,19 @@ const Encap = () => {
             <Form />
           </div>
         </main>
+
+        <ToastContainer
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
       </div>
     </Layout>
   );
