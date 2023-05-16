@@ -27,10 +27,10 @@ module.exports = {
         pink: {
           DEFAULT: '#FF6687'
         },
-        green : {
+        green: {
           DEFAULT: '#0c2717'
         },
-        lightGreen : {
+        lightGreen: {
           DEFAULT: '#F5FFEC'
         }
       },
@@ -41,6 +41,13 @@ module.exports = {
       borderColor: ['group-focus', 'group-focus-within'],
       textColor: ['group-focus-within', 'placeholder-shown'],
     }
+  },
+  screens: {
+    'sm': '640px',
+    'md': '768px',
+    'lg': '1024px',
+    'xl': '1280px',
+    '2xl': '1536px',
   },
   plugins: [],
 }
