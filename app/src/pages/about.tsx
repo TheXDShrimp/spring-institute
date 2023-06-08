@@ -5,6 +5,11 @@ import React from "react";
 import { Layout } from "@/components/layout";
 import Background from "@/components/HomeBackground"
 import ColoredLine from "@/components/horizontalRule";
+
+import { nationalDirectorsData } from "./api/nationalDirectorsData";
+import { regionalDirectorsData } from "./api/regionalDirectorsData";
+import { fellowsData } from "./api/fellowsData";
+
 import anime from 'animejs';
 
 const SingleCard = ({ name = "", position = "", image = "/favicon-16x16.png", description }) => {
@@ -35,6 +40,66 @@ const SingleCard = ({ name = "", position = "", image = "/favicon-16x16.png", de
   );
 };
 
+const RegionalCard = ({ name = "", position = "", image = "/favicon-16x16.png", description }) => {
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    anime({
+      targets: cardRef.current,
+      translateX: [-50, 0],
+      opacity: [0, 1],
+      easing: 'easeOutElastic(1, .8)',
+      duration: 1500,
+      delay: 500,
+    });
+  }, []);
+
+  return (
+    <div className="md:flex md:flex-row ml-4 py-4 px-4" ref={cardRef}>
+      <div className="rounded-full mr-3 border-black flex flex-row justify-center items-center">
+        <Image src={"/images/" + image} alt="" width={150} height={150} layout="fixed" className="rounded-full" />
+      </div>
+
+      <div className="pl-2 text-white">
+        <h2 className="font-black text-3xl">{name} - {position}</h2>
+        <p className="pt-4">{description}</p>
+      </div>
+    </div>
+  );
+};
+
+
+const FellowCard = ({ name = "", position = "", image = "/favicon-16x16.png", description }) => {
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    anime({
+      targets: cardRef.current,
+      translateX: [-50, 0],
+      opacity: [0, 1],
+      easing: 'easeOutElastic(1, .8)',
+      duration: 1500,
+      delay: 500,
+    });
+  }, []);
+
+
+  return (
+    <div className="md:flex md:flex-row ml-4 py-4 px-4" ref={cardRef}>
+      <div className="rounded-full mr-3 border-black flex flex-row justify-center items-center">
+        <Image src={"/images/" + image} alt="" width={150} height={150} layout="fixed" className="rounded-full" />
+      </div>
+
+      <div className="pl-2 text-white">
+        <h2 className="font-black text-3xl">{name} - {position}</h2>
+        <p className="pt-4">{description}</p>
+      </div>
+    </div>
+  );
+};
+
+
+
 const TopSection: NextPage<any> = () => {
   return (
     <div className="flex flex-col place-items-center">
@@ -56,17 +121,55 @@ const NationalDirectors: NextPage<any> = () => {
         <h1>National Directors</h1>
       </div>
       <div className="mt-5 grid xs:grid-cols-1 lg:grid-cols-2 xs:m-5 md:m-12 gap-5 pb-8">
-        <SingleCard name="Brian Zhou" position="Founder & Chairman" image="bzhou.png" description="A junior at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Brian is interested in studying the intersections between policy, economics, and the computational sciences. Outside of SPRING, Brian is a captain of his school's debate team and a researcher. He enjoys hiking, cooking, and exploring new places." />
-        <SingleCard name="Arik Karim" position="Editor-in-Chief" image="arik.png" description="A junior at Dreyfoos School of the Arts in West Palm Beach, Florida, Arik is interested in exploring the convergence of international relations, philosophy, and public policy. Outside of SPRING, Arik is the captain of his school's debate team and volunteers for bringing the arts to underprivileged youth in Palm Beach County. He enjoys reading, music, and biking." />
-        <SingleCard name="Vivian Zhu" position="Director of Media" image="vivian.png" description="A junior at Ridge High School in Basking Ridge, New Jersey, Vivian is interested in studying business, economics, and law. Outside of SPRING, Vivian is a debater while serving as Secretary and Treasurer of her team. She also loves listening to music, writing, translating, teaching kids abroad English, and of course: watching Criminal Minds." />
-        <SingleCard name="Jake Zeng" position="Director of Outreach" image="jake.png" description="A sophomore at American Heritage School in Plantation, Florida, Jake is a student primarily interested in studying law, economics, the courts, and politics. Outside of SPRING, Jake is on the US Development Team for debate and competes in mock trial and moot court. Jake loves playing chess, reading travel magazines, and keeping up with friends." />
-        <SingleCard name="Sonny Chen" position="Director of Tech" image="sonny.png" description="A junior at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Sonny is interested in studying all that Computer Science and Machine Learning has to offer. Outside of school, Sonny previously interned at Microsoft, enjoys outswimming his friend David, playing competitive Minecraft and chess." />
-        <SingleCard name="Anant Khandelwal" position="Assistant Director of Tech" image="anant.png" description="A junior at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Anant is interested in both Machine Learning and Mathematics. Aside from school, Anant enjoys debating and researching concepts in machine learning. His hobbies include weightlifting, playing tennis and ping pong, and reading." />
-        <SingleCard name="Sam Chen" position="Director of Events" image="sam.png" description="A junior at Boston Latin School in Boston, Massachusetts, Sam is deeply curious about economics, international relations, and politics. He likes researching about the current state of the world order and the future of American policy making, debating public forum, writing about classics, playing basketball with his brother and poker with friends." />
+        {nationalDirectorsData.map((cardData, index) => (
+          <SingleCard
+            key={index}
+            name={cardData.name}
+            position={cardData.position}
+            image={cardData.image}
+            description={cardData.description}
+          />
+        ))}
       </div>
     </section>
   );
 };
+
+const RegionalDirectors: NextPage<any> = () => {
+  return (
+    <section>
+      <div className="flex flex-row justify-center pt-12 text-4xl">
+        <h1>Regional Directors</h1>
+      </div>
+
+      <div className="mt-5 grid xs:grid-cols-1 lg:grid-cols-2 xs:m-5 md:m-12 gap-5 pb-8">
+        {regionalDirectorsData.map((cardData, index) => (
+          <RegionalCard
+            key={index}
+            name={cardData.name}
+            position={cardData.position}
+            image={cardData.image}
+            description={cardData.description}
+          />
+        ))}
+      </div>
+    </section>
+  )
+}
+
+const Fellows: NextPage<any> = () => {
+  return (
+    <section>
+      <div className="flex flex-row justify-center pt-12 text-4xl">
+        <h1>Regional Directors</h1>
+      </div>
+
+      <div className="mt-5 grid xs:grid-cols-1 lg:grid-cols-2 xs:m-5 md:m-12 gap-5 pb-8">
+
+      </div>
+    </section>
+  )
+}
 
 const AboutUs: NextPage<any> = () => {
   return (

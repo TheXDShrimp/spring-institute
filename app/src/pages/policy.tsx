@@ -90,9 +90,6 @@ const SinglePolicy = ({ type, title, date, authors, image, description, link }) 
 };
 
 
-
-
-
 const Pages: NextPage<any> = () => {
     return (
         <section className="w-full min-h-screen" style={{ background: '#fff' }}>
@@ -115,7 +112,7 @@ const Pages: NextPage<any> = () => {
                     title="Memo Regarding Right-to-Work Laws in America"
                     date="April 8, 2023"
                     authors="Aileen Wu, Frederick Bao, Arman Syed"
-                    image="/images/highSpeedRail.jpg"
+                    image="/images/righttowork.webp"
                     description="Right-to-work laws are detrimental to collective bargaining by requiring dues to be optional, diminishing the power of unions. Consequently, 
                     right-to-work laws undermine workplace safety, healthcare coverage, and lower wages. Thus, we urge the ratification of the H.R.842 Protecting the Right 
                     to Organize Act of 2021 (PRO Act), repealing right-to-work laws from all 26 states currently enacting these laws, and strengthening modern labor laws 
