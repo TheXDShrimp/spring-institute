@@ -51,7 +51,7 @@ export const nationalDirectorsData = [
     {
         name: "Ella Zhang",
         position: "Director of Media",
-        image: "ella.png",
+        image: "ezhang.png",
         description: "A freshman at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Ella is a student with a keen interest in economics, engineering, and environmental science. In her free time, Ella enjoys swimming, baking, reading, and writing."
     }
 

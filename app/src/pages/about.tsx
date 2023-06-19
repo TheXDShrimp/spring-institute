@@ -161,11 +161,19 @@ const Fellows: NextPage<any> = () => {
   return (
     <section>
       <div className="flex flex-row justify-center pt-12 text-4xl">
-        <h1>Regional Directors</h1>
+        <h1>Fellows</h1>
       </div>
 
       <div className="mt-5 grid xs:grid-cols-1 lg:grid-cols-2 xs:m-5 md:m-12 gap-5 pb-8">
-
+        {fellowsData.map((cardData, index) => (
+          <FellowCard
+            key={index}
+            name={cardData.name}
+            position={cardData.position}
+            image={cardData.image}
+            description={cardData.description}
+          />
+        ))}
       </div>
     </section>
   )
@@ -181,6 +189,10 @@ const AboutUs: NextPage<any> = () => {
 
 
           <NationalDirectors />
+
+          <RegionalDirectors />
+
+          <Fellows />
         </main>
       </div>
     </Layout>
