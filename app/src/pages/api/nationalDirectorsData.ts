@@ -37,12 +37,6 @@ export const nationalDirectorsData = [
         description: "A junior at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Anant is interested in both Machine Learning and Mathematics. Aside from school, Anant enjoys debating and researching concepts in machine learning. His hobbies include weightlifting, playing tennis and ping pong, and reading."
     },
     {
-        name: "Sam Chen",
-        position: "Director of Events",
-        image: "sam.png",
-        description: "A junior at Boston Latin School in Boston, Massachusetts, Sam is deeply curious about economics, international relations, and politics. He likes researching about the current state of the world order and the future of American policy making, debating public forum, writing about classics, playing basketball with his brother and poker with friends."
-    },
-    {
         name: "Hanming Sun",
         position: "Director of Operations",
         image: "hanming.png",
