@@ -15,14 +15,14 @@ export const regionalDirectorsData = [
 
     {
         name: "Arman Syed",
-        position: "Regional Director of DC",
+        position: "Regional Director of DC/Maryland",
         image: "asyed.png",
         description: "A member of the class of 2025 at Sidwell Friends School in Washington DC, Arman is interested in both economics and international relations. Additionally to SPRING, Arman is an avid debater as well as also enjoying things like playing chess and spending time with friends. "
     },
 
     {
         name: "Frederick Bao",
-        position: "Regional Director of DC",
+        position: "Regional Director of DC/Maryland",
         image: "fbao.png",
         description: "Fred is a sophomore at Sidwell Friends High School in Washington D.C. Having been interested in politics from a very young age, Fred closely follows current events, local and national politics. Outside of SPRING, Fred is a National Go Champion and does debate. He enjoys playing ice hockey, watching football, and collecting cards."
     },
