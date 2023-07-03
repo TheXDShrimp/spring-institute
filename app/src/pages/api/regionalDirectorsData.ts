@@ -90,6 +90,18 @@ export const regionalDirectorsData = [
         position: "Regional Director of North Carolina",
         image: "axu.png",
         description: "Andrew is a junior at East Chapel Hill High School in North Carolina. He loves studying and exploring various aspects of our world, particularly economics and domestic politics. In addition, he is an avid debater, composer, and pianist."
+    },
+
+
+
+    
+
+    
+    {
+        name: "Joseph Nahas",
+        position: "Regional Director of California",
+        image: "jnahas.png",
+        description: "Joseph Nahas is a senior at La Salle College preparatory in Pasadena, California. He aspires to major in political science and is intrigued by the political and economic complex of our domestic nation and foreign countries. Outside of Spring, Joseph enjoys Public Forum debate, basketball, and cooking."
     }
 
 ];
