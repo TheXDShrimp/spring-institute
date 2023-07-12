@@ -4,7 +4,6 @@ export const nationalDirectorsData = [
         position: "Founder & Chairman",
         image: "bzhou.png",
         description: "A junior at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Brian is interested in studying the intersections between policy, economics, and the computational sciences. Outside of SPRING, Brian is a captain of his school's debate team and a researcher. He enjoys hiking, cooking, and exploring new places."
-
     },
     {
         name: "Arik Karim",
@@ -35,12 +34,6 @@ export const nationalDirectorsData = [
         position: "Assistant Director of Tech",
         image: "anant.png",
         description: "A junior at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Anant is interested in both Machine Learning and Mathematics. Aside from school, Anant enjoys debating and researching concepts in machine learning. His hobbies include weightlifting, playing tennis and ping pong, and reading."
-    },
-    {
-        name: "Sam Chen",
-        position: "Director of Events",
-        image: "sam.png",
-        description: "A junior at Boston Latin School in Boston, Massachusetts, Sam is deeply curious about economics, international relations, and politics. He likes researching about the current state of the world order and the future of American policy making, debating public forum, writing about classics, playing basketball with his brother and poker with friends."
     },
     {
         name: "Hanming Sun",

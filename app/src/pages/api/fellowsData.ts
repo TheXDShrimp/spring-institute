@@ -131,13 +131,6 @@ export const fellowsData = [
     },
 
     {
-        name: "Devang Doshi",
-        position: "Fellow from Georgia",
-        image: "ddoshi.png",
-        description: "A freshman at Wheeler Magnet High School in Marietta, Georgia, Devang is interested in computer science, cybersecurity, and law. Outside of SPRING, Devang enjoys debating, playing chess, and playing basketball."
-    },
-
-    {
         name: "Gia Mendonca",
         position: "Fellow from Georgia",
         image: "gmendonca.png",

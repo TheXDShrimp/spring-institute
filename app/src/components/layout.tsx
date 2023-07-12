@@ -6,10 +6,10 @@ export const Layout: FC<any> = ({ dim=false, children, mode='dark'}) => {
     return (
         <>
             <Head>
-                <title>Spring Institute</title>
+                <title>SPRING Institute</title>
                 <meta charSet="UTF-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
-                <meta name="description" content="Spring Institute: a place for youth political action."/>
+                <meta name="description" content="SPRING Institute: a place for youth political action."/>
                 <meta name="keywords" content="Voting, Public Policy, Youth Activism"/>
                 <meta name="robots" content="index, follow"/>
                 <meta name="web_author" content="Sonny Chen, Anant Khandelwal, Alvan Caleb Arulandu"/>
