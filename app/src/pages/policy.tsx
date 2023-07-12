@@ -117,7 +117,7 @@ const Pages: NextPage<any> = () => {
                     right-to-work laws undermine workplace safety, healthcare coverage, and lower wages. Thus, we urge the ratification of the H.R.842 Protecting the Right 
                     to Organize Act of 2021 (PRO Act), repealing right-to-work laws from all 26 states currently enacting these laws, and strengthening modern labor laws 
                     such as increased minimum wage. "
-                    link=""
+                    link="https://docs.google.com/document/d/1WbY7M2UVV-wDakSj_-bQFvva1uXTiQjeeokQ8vSIyC4/edit"
                 />
 
                 <div className="py-12">
