@@ -15,14 +15,14 @@ export const regionalDirectorsData = [
 
     {
         name: "Arman Syed",
-        position: "Regional Director of DC",
+        position: "Regional Director of DC/Maryland",
         image: "asyed.png",
         description: "A member of the class of 2025 at Sidwell Friends School in Washington DC, Arman is interested in both economics and international relations. Additionally to SPRING, Arman is an avid debater as well as also enjoying things like playing chess and spending time with friends. "
     },
 
     {
         name: "Frederick Bao",
-        position: "Regional Director of DC",
+        position: "Regional Director of DC/Maryland",
         image: "fbao.png",
         description: "Fred is a sophomore at Sidwell Friends High School in Washington D.C. Having been interested in politics from a very young age, Fred closely follows current events, local and national politics. Outside of SPRING, Fred is a National Go Champion and does debate. He enjoys playing ice hockey, watching football, and collecting cards."
     },
@@ -90,6 +90,18 @@ export const regionalDirectorsData = [
         position: "Regional Director of North Carolina",
         image: "axu.png",
         description: "Andrew is a junior at East Chapel Hill High School in North Carolina. He loves studying and exploring various aspects of our world, particularly economics and domestic politics. In addition, he is an avid debater, composer, and pianist."
+    },
+
+
+
+    
+
+    
+    {
+        name: "Joseph Nahas",
+        position: "Regional Director of California",
+        image: "jnahas.png",
+        description: "Joseph Nahas is a senior at La Salle College preparatory in Pasadena, California. He aspires to major in political science and is intrigued by the political and economic complex of our domestic nation and foreign countries. Outside of Spring, Joseph enjoys Public Forum debate, basketball, and cooking."
     }
 
 ];
