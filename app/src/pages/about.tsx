@@ -104,7 +104,7 @@ const TopSection: NextPage<any> = () => {
   return (
     <div className="flex flex-col place-items-center">
       <h1 className="text-white text-8xl font-black xs:mx-12 md:mx-24 mt-24" >About Us</h1>
-      <p className="px-12 text-white text-center text-lg font-medium mt-8">
+      <p className="px-36 text-white text-center text-lg font-medium mt-8">
         We believe that we have a crucial role to play in shaping the policies that affect us and our communities.
         That's why we've come together as a group of dedicated high school advocates, determined to make our voices heard.
         We're proud to introduce our fantastic staff:

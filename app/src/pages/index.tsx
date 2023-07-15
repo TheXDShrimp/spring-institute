@@ -62,6 +62,7 @@ const HomeSection: NextPage<any> = () => {
         <main className='min-h-screen bg-transparent'>
           <div className="h-screen flex flex-col justify-center items-center">
             <h1 ref={titleRef} className="text-white text-center text-8xl font-black">Your voice matters.</h1>
+
             <Button ref={buttonRef} name="Get involved ->" className="mt-6" link="/form" />
           </div>
         </main>
@@ -102,6 +103,7 @@ const AboutUsSection: NextPage<any> = () => {
   }, []);
 
 
+  const lightgreen = "#88FF0C"
   return (
     <section id="about-us-section" className="w-full h-screen">
       <div className="relative w-full h-full">
@@ -111,15 +113,27 @@ const AboutUsSection: NextPage<any> = () => {
           </h1>
           <div className="mt-8 max-w-2xl">
             <p className="text-white text-lg font-medium text-center">
-              Across the board, the youth is becoming more involved in politics: more than 55% of all youth turned out to
-              vote in 2020. Yet, even as the youth voice is increasingly decisive in elections outcomes, there is a lack
+              Across the board, the youth is becoming more involved in politics: more than 
+
+              {" "}
+              <span style={{ color: lightgreen, fontWeight: "bold" }}>
+                55% of all youth turned out to vote in 2020.
+              </span>{" "}
+
+
+              Yet, even as the youth voice is increasingly decisive in elections outcomes, there is a lack
               of opportunity for students to engage in the policy making process at the highest level. This is crucial -
-              youth engagement, especially in high school, builds more engaged voters and a more democratic society.
+
+              {" "}
+              <span style={{ color: lightgreen, fontWeight: "bold" }}>
+                youth engagement, especially in high school, builds more engaged voters and a more democratic society.
+              </span>{" "}
+
             </p>
             <p className="mt-8 text-white text-lg font-medium text-center">
-              We are building a global, 100% youth-powered movement to close this gap in policy worldwide. By providing a
-              platform for the youth to spring into action, we cultivate and nurture the next generation of leaders,
-              thinkers, and advocates.
+              We are building a global, 100% youth-powered movement to close this gap in policy worldwide.
+              By providing a platform for the youth to spring into action, we cultivate and nurture the next generation
+              of leaders, thinkers, and advocates.
             </p>
           </div>
           <Button ref={buttonRef} name="Get Involved ->" className="mt-6" link="/form" />

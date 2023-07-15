@@ -100,7 +100,7 @@ export const regionalDirectorsData = [
     {
         name: "Joseph Nahas",
         position: "Regional Director of California",
-        image: "jnahas.png",
+        image: "jnahas.jpg",
         description: "Joseph Nahas is a senior at La Salle College preparatory in Pasadena, California. He aspires to major in political science and is intrigued by the political and economic complex of our domestic nation and foreign countries. Outside of Spring, Joseph enjoys Public Forum debate, basketball, and cooking."
     }
 
