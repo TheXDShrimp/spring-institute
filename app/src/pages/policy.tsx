@@ -95,6 +95,19 @@ const Pages: NextPage<any> = () => {
         <section className="w-full min-h-screen" style={{ background: '#fff' }}>
             <div className="pl-4 sm:px-16 md:px-32 py-20">
                 <SinglePolicy
+                    type="INFO REPORT"
+                    title="Report on Youth Solitary Confinement"
+                    date="August 22, 2023"
+                    authors="Sophia Li, Peter Hablinski, Kaveen Shah, Max Kettles et al."
+                    image="/images/solitaryconfinement.jpg"
+                    description="High-speed rail has the potential to revitalize the decaying American passenger rail system and public transit infrastructure at large.
+                    However, while other countries have far surpassed America's HSR network, ongoing projects in America face delayed construction, rising costs,
+                    legal challenges, and poor support infrastructure. Despite these challenges, HSR still has the potential to revolutionize American transit
+                    and revitalize the American economy, offering an alternative to car and air travel, reducing carbon emissions..."
+                    link="/files/8-22-23-INFOREPORT-TX-Solitary-Confinement.pdf"
+                />
+
+                <SinglePolicy
                     type="POLICY BRIEF"
                     title="Report on High-Speed Rail: Recommendations for a New Era of American Infrastructure"
                     date="April 4, 2023"
