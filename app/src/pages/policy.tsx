@@ -100,10 +100,11 @@ const Pages: NextPage<any> = () => {
                     date="August 22, 2023"
                     authors="Sophia Li, Peter Hablinski, Kaveen Shah, Max Kettles et al."
                     image="/images/solitaryconfinement.jpg"
-                    description="High-speed rail has the potential to revitalize the decaying American passenger rail system and public transit infrastructure at large.
-                    However, while other countries have far surpassed America's HSR network, ongoing projects in America face delayed construction, rising costs,
-                    legal challenges, and poor support infrastructure. Despite these challenges, HSR still has the potential to revolutionize American transit
-                    and revitalize the American economy, offering an alternative to car and air travel, reducing carbon emissions..."
+                    description="As the implementation of Juvenile Detention as a mechanism to hold youth accountable has been growing, so has the profound negative impacts it
+                    has on these teenagers. Studies have found that teens often experience severe mental health conditions during and after their sentence in Juvenile Detention
+                    including anxiety, depression, and suicidal ideation. The isolation in Juvenile Detention often causes psychological and behavioral issues, including aggressive
+                    and disruptive behaviors within kids. Despite several attempts at reform on a federal and state level, the system is still discriminatory towards minority 
+                    groups and causes. severe psychological trauma in younger generations. However, there are alternatives…"
                     link="/files/8-22-23-INFOREPORT-TX-Solitary-Confinement.pdf"
                 />
 
