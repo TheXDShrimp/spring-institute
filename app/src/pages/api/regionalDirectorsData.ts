@@ -68,7 +68,7 @@ export const regionalDirectorsData = [
         name: "Natalie Zhang",
         position: "Regional Director of Washington",
         image: "nzhang.jpg",
-        description: "As a (rising) freshman at Lakeside Upper School in Seattle, Washington, Natalie loves researching US policy and progressive movements that have shaped our modern-day society as a whole. She loves practicing rhythmic gymnastics and debating on the national circuit. During her free time, she often listens to music, studies national news, and socializes with friends."
+        description: "As a (rising) freshman in Seattle, Washington, Natalie loves researching US policy and progressive movements that have shaped our modern-day society as a whole. She loves practicing rhythmic gymnastics and debating on the national circuit. During her free time, she often listens to music, studies national news, and socializes with friends."
     },
 
     {

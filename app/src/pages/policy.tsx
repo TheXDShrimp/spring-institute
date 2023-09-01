@@ -96,7 +96,7 @@ const Pages: NextPage<any> = () => {
             <div className="pl-4 sm:px-16 md:px-32 py-20">
                 <SinglePolicy
                     type="INFO REPORT"
-                    title="Report on Youth Solitary Confinement"
+                    title="Report on Youth Juvenile Detention"
                     date="August 22, 2023"
                     authors="Sophia Li, Peter Hablinski, Kaveen Shah, Max Kettles et al."
                     image="/images/solitaryconfinement.jpg"
@@ -105,7 +105,7 @@ const Pages: NextPage<any> = () => {
                     including anxiety, depression, and suicidal ideation. The isolation in Juvenile Detention often causes psychological and behavioral issues, including aggressive
                     and disruptive behaviors within kids. Despite several attempts at reform on a federal and state level, the system is still discriminatory towards minority 
                     groups and causes. severe psychological trauma in younger generations. However, there are alternatives…"
-                    link="/files/8-22-23-INFOREPORT-TX-Solitary-Confinement.pdf"
+                    link="/files/8-22-23-INFOREPORT-TX-Juvenile-Detention.pdf"
                 />
 
                 <SinglePolicy
