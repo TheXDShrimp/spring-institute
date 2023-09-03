@@ -71,7 +71,7 @@ const NavBar = ({ mode = 'dark' }) => {
         <span className="text-white mx-2">|</span>
         <NavLink index={5} href="/advocacy" name="Advocacy" />
         <span className="text-white mx-2">|</span> */}
-        <NavLink index={6} href="/form" name="Get Involved" textColor={textColor} />
+        <NavLink index={6} href="/newsletter_form" name="Get Involved" textColor={textColor} />
 
       </div>
     </nav>

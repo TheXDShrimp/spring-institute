@@ -14,11 +14,11 @@ import "react-toastify/dist/ReactToastify.css";
 const HomeSection: NextPage<any> = () => {
   const titleRef = useRef(null);
   const buttonRef = useRef(null);
+  const newButtonRef = useRef(null);
   const [showScrollButton, setShowScrollButton] = useState(true);
 
-
   useEffect(() => {
-    anime({
+    const animateTitle = anime({
       targets: titleRef.current,
       translateY: [-100, 0],
       opacity: [0, 1],
@@ -26,8 +26,17 @@ const HomeSection: NextPage<any> = () => {
       duration: 1500,
     });
 
-    anime({
+    const animateButton = anime({
       targets: buttonRef.current,
+      translateY: [100, 0],
+      opacity: [0, 1],
+      duration: 5000,
+      easing: 'easeOutElastic(1, .8)',
+      delay: 500,
+    });
+
+    const animateNewButton = anime({
+      targets: newButtonRef.current,
       translateY: [100, 0],
       opacity: [0, 1],
       duration: 5000,
@@ -47,9 +56,11 @@ const HomeSection: NextPage<any> = () => {
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      animateTitle.pause();
+      animateButton.pause();
+      animateNewButton.pause();
     };
   }, []);
-
 
   const scrollButton = () => {
     const aboutUsSection = document.getElementById('about-us-section');
@@ -61,12 +72,15 @@ const HomeSection: NextPage<any> = () => {
       <div className='relative w-full h-screen'>
         <main className='min-h-screen bg-transparent'>
           <div className="h-screen flex flex-col justify-center items-center">
-            <h1 ref={titleRef} className="text-white text-center text-8xl font-black">Your voice matters.</h1>
-
-            <Button ref={buttonRef} name="Get involved ->" className="mt-6" link="/form" />
+            <div ref={titleRef}>
+              <h1 className="text-white text-center text-8xl font-black">Your voice matters.</h1>
+            </div>
+            <div ref={buttonRef}>
+              <Button name="Join our newsletter!" className="mt-6 mr-2" link="/newsletter_form" />
+              <Button name="Join our cause!" className="mt-4 ml-2" link="https://docs.google.com/forms/d/e/1FAIpQLSdTspH8i2cRPses3bJJus8OAHjnsprt7r_JzzMlz3WTF8vUBA/viewform" />
+            </div>
           </div>
         </main>
-
 
         <div className={`absolute bottom-0 left-0 right-0 text-center mb-12 ${showScrollButton ? '' : 'hidden'}`}>
           <button onClick={scrollButton} className="text-white font-bold text-xl rounded-full py-3 px-4 bg-gray-900 hover:bg-gray-800">
@@ -78,6 +92,7 @@ const HomeSection: NextPage<any> = () => {
     </section>
   );
 };
+
 
 const AboutUsSection: NextPage<any> = () => {
   const headingRef = useRef(null);
@@ -113,7 +128,7 @@ const AboutUsSection: NextPage<any> = () => {
           </h1>
           <div className="mt-8 max-w-2xl">
             <p className="text-white text-lg font-medium text-center">
-              Across the board, the youth is becoming more involved in politics: more than 
+              Across the board, the youth is becoming more involved in politics: more than
 
               {" "}
               <span style={{ color: lightgreen, fontWeight: "bold" }}>
@@ -136,7 +151,10 @@ const AboutUsSection: NextPage<any> = () => {
               of leaders, thinkers, and advocates.
             </p>
           </div>
-          <Button ref={buttonRef} name="Get Involved ->" className="mt-6" link="/form" />
+          <div ref={buttonRef}>
+            <Button name="Join our newsletter!" className="mt-6 mr-2" link="/newsletter_form" />
+            <Button name="Join our cause!" className="mt-4 ml-2" link="https://docs.google.com/forms/d/e/1FAIpQLSdTspH8i2cRPses3bJJus8OAHjnsprt7r_JzzMlz3WTF8vUBA/viewform" />
+          </div>
         </main>
       </div>
     </section>
