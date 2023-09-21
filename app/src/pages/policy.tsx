@@ -94,6 +94,20 @@ const Pages: NextPage<any> = () => {
     return (
         <section className="w-full min-h-screen" style={{ background: '#fff' }}>
             <div className="pl-4 sm:px-16 md:px-32 py-20">
+            <SinglePolicy
+                    type="INFO REPORT"
+                    title="Report on Public Option Healthcare"
+                    date="September 21, 2023"
+                    authors="Jake Zeng, Matthew Rodriguez, Emma Delgado, Sharif Khan et al."
+                    image="/images/publicoption.jpg"
+                    description="As the implementation of Juvenile Detention as a mechanism to hold youth accountable has been growing, so has the profound negative impacts it
+                    has on these teenagers. Studies have found that teens often experience severe mental health conditions during and after their sentence in Juvenile Detention
+                    including anxiety, depression, and suicidal ideation. The isolation in Juvenile Detention often causes psychological and behavioral issues, including aggressive
+                    and disruptive behaviors within kids. Despite several attempts at reform on a federal and state level, the system is still discriminatory towards minority 
+                    groups and causes. severe psychological trauma in younger generations. However, there are alternatives…"
+                    link="/files/9-21-23-INFOREPORT-FL-Public-Option.pdf"
+                />
+                
                 <SinglePolicy
                     type="INFO REPORT"
                     title="Report on Youth Juvenile Detention"
