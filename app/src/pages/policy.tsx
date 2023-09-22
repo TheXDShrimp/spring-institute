@@ -100,11 +100,13 @@ const Pages: NextPage<any> = () => {
                     date="September 21, 2023"
                     authors="Jake Zeng, Matthew Rodriguez, Emma Delgado, Sharif Khan et al."
                     image="/images/publicoption.jpg"
-                    description="As the implementation of Juvenile Detention as a mechanism to hold youth accountable has been growing, so has the profound negative impacts it
-                    has on these teenagers. Studies have found that teens often experience severe mental health conditions during and after their sentence in Juvenile Detention
-                    including anxiety, depression, and suicidal ideation. The isolation in Juvenile Detention often causes psychological and behavioral issues, including aggressive
-                    and disruptive behaviors within kids. Despite several attempts at reform on a federal and state level, the system is still discriminatory towards minority 
-                    groups and causes. severe psychological trauma in younger generations. However, there are alternatives…"
+                    description="Healthcare is inaccessible to an unimaginable extent, as patients facing devastating diseases are faced with the 
+                    impossible choice between sacrificing their health and paying an exorbitant fee. However, the usage of a public option healthcare 
+                    plan – funded by governments and competing against existing private plans already in the market – has the potential to drastically 
+                    increase the coverage of healthcare, provide necessary treatment for millions, while preserving the free market competition that 
+                    allows providers to be paid and costs to stay low.  Studies have found that a public option healthcare system would save the U.S. 
+                    government billions, help hospitals burdened by uncompensated care, negotiate lower prices for healthcare services, all while keeping 
+                    necessary health services available for the patients who need it the most."
                     link="/files/9-21-23-INFOREPORT-FL-Public-Option.pdf"
                 />
                 
