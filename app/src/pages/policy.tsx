@@ -94,7 +94,30 @@ const Pages: NextPage<any> = () => {
     return (
         <section className="w-full min-h-screen" style={{ background: '#fff' }}>
             <div className="pl-4 sm:px-16 md:px-32 py-20">
-            <SinglePolicy
+                <SinglePolicy
+                    type="POLICY BRIEF"
+                    title="Policy Proposals for the United Kingdom's National Quantum Strategy"
+                    date="September 22, 2023"
+                    authors="Brian Zhou, Brayden Lee, Arik Karim, Gia Mendonca, Hanming Sun et al."
+                    image="/images/qcomputer.jpeg"
+                    description="The up-and-coming technological development that will define the next few centuries of scientific
+                    advancement is not in Artificial Intelligence, but rather our understanding of the sub-atomic:
+                    quantum. The quantum revolution leverages new innovative understandings in science theory and
+                    engineering capability to create new solutions in diverse spaces from cryptography to physical
+                    materials. Quantum computers, which offer the real possibility of replacing classical computers
+                    for intensive tasks, have the potential to transform and optimise sectors from agriculture and the
+                    life sciences to finance and operations. Other aspects of quantum such as communications and
+                    encryption technology pose short-term national security concerns and long-term potentials for
+                    secure communications if done correctly. In this brief for the United Kingdom's Department for Science, Innovation, and Technology, we reviewed relevant scientific trends in quantum research and
+                    development and the motivations that drive relevant stakeholders—including governments,
+                    universities, and corporations—to analyse how the UK can implement changes to its strategic
+                    goals in quantum leadership. We adopt a discursive approach to potential solutions, examining
+                    the UK’s vital role in the years to come. We urge the UK to invest in the driving force behind
+                    quantum’s bright future: the youth of today that will build tomorrow."
+                    link="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4592939"
+                />
+
+                <SinglePolicy
                     type="INFO REPORT"
                     title="Report on Public Option Healthcare"
                     date="September 21, 2023"
