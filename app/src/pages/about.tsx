@@ -7,10 +7,11 @@ import Background from "@/components/HomeBackground"
 import ColoredLine from "@/components/horizontalRule";
 
 import { nationalDirectorsData } from "./api/nationalDirectorsData";
-import { regionalDirectorsData } from "./api/regionalDirectorsData";
-import { fellowsData } from "./api/fellowsData";
+import peopleData from "./api/data";
+import usMapData from "./api/usmap"
 
 import anime from 'animejs';
+
 
 const SingleCard = ({ name = "", position = "", image = "/favicon-16x16.png", description }) => {
   const cardRef = useRef(null);
@@ -40,66 +41,6 @@ const SingleCard = ({ name = "", position = "", image = "/favicon-16x16.png", de
   );
 };
 
-const RegionalCard = ({ name = "", position = "", image = "/favicon-16x16.png", description }) => {
-  const cardRef = useRef(null);
-
-  useEffect(() => {
-    anime({
-      targets: cardRef.current,
-      translateX: [-50, 0],
-      opacity: [0, 1],
-      easing: 'easeOutElastic(1, .8)',
-      duration: 1500,
-      delay: 500,
-    });
-  }, []);
-
-  return (
-    <div className="md:flex md:flex-row ml-4 py-4 px-4" ref={cardRef}>
-      <div className="rounded-full mr-3 border-black flex flex-row justify-center items-center">
-        <Image src={"/images/" + image} alt="" width={150} height={150} layout="fixed" className="rounded-full" />
-      </div>
-
-      <div className="pl-2 text-white">
-        <h2 className="font-black text-3xl">{name} - {position}</h2>
-        <p className="pt-4">{description}</p>
-      </div>
-    </div>
-  );
-};
-
-
-const FellowCard = ({ name = "", position = "", image = "/favicon-16x16.png", description }) => {
-  const cardRef = useRef(null);
-
-  useEffect(() => {
-    anime({
-      targets: cardRef.current,
-      translateX: [-50, 0],
-      opacity: [0, 1],
-      easing: 'easeOutElastic(1, .8)',
-      duration: 1500,
-      delay: 500,
-    });
-  }, []);
-
-
-  return (
-    <div className="md:flex md:flex-row ml-4 py-4 px-4" ref={cardRef}>
-      <div className="rounded-full mr-3 border-black flex flex-row justify-center items-center">
-        <Image src={"/images/" + image} alt="" width={150} height={150} layout="fixed" className="rounded-full" />
-      </div>
-
-      <div className="pl-2 text-white">
-        <h2 className="font-black text-3xl">{name} - {position}</h2>
-        <p className="pt-4">{description}</p>
-      </div>
-    </div>
-  );
-};
-
-
-
 const TopSection: NextPage<any> = () => {
   return (
     <div className="flex flex-col place-items-center">
@@ -112,7 +53,6 @@ const TopSection: NextPage<any> = () => {
     </div>
   );
 };
-
 
 const NationalDirectors: NextPage<any> = () => {
   return (
@@ -135,48 +75,63 @@ const NationalDirectors: NextPage<any> = () => {
   );
 };
 
-const RegionalDirectors: NextPage<any> = () => {
+const USMap = () => {
+  const [selectedState, setSelectedState] = useState("Virginia");
+
+
+  const handleStateClick = (stateName: string) => {
+    setSelectedState(stateName);
+  };
+
   return (
-    <section>
-      <div className="flex flex-row justify-center pt-12 text-4xl">
-        <h1>Regional Directors</h1>
+    <section className="my-8">
+      <div className="bg-slate-400 rounded-lg mx-12 mb-8">
+        <div className="flex flex-row justify-center pt-12 text-4xl flex border-2 border-gray-900 ">
+          <div className="mt-8">
+            <svg width="1100" height="600">
+              <g id="map">
+                {usMapData.map((curState) => {
+                  // Find the corresponding state data in statesData
+                  const stateInfo = peopleData.find(
+                    (state) => state.stateName === curState.name
+                  );
+
+                  // Determine the fill color based on the number of fellows
+                  let fillColor = "gray";
+                  if (stateInfo && stateInfo.fellows.length >= 3) {
+                    fillColor = "green";
+                  } else if (stateInfo) {
+                    fillColor = "lightgreen";
+                  }
+
+                  return (
+                    <path
+                      key={curState.state}
+                      d={curState.path}
+                      style={{
+                        strokeWidth: 0.97063118,
+                        fill: fillColor,
+                        stroke: "#000",
+                      }}
+                      onClick={() => handleStateClick(curState.name)}
+                    />
+                  );
+                })}
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div className="flex flex-col place-items-center pb-8">
+          <h2 className="text-white text-6xl font-black xs:mx-12 md:mx-24 mt-4">Welcome to {selectedState}</h2>
+          <p className="px-36 text-white text-center text-lg font-medium mt-8"> Contact: </p>
+          <p> Overseer: </p>
+        </div>
       </div>
 
-      <div className="mt-5 grid xs:grid-cols-1 lg:grid-cols-2 xs:m-5 md:m-12 gap-5 pb-8">
-        {regionalDirectorsData.map((cardData, index) => (
-          <RegionalCard
-            key={index}
-            name={cardData.name}
-            position={cardData.position}
-            image={cardData.image}
-            description={cardData.description}
-          />
-        ))}
-      </div>
+      <p>secret</p>
     </section>
-  )
-}
-
-const Fellows: NextPage<any> = () => {
-  return (
-    <section>
-      <div className="flex flex-row justify-center pt-12 text-4xl">
-        <h1>Fellows</h1>
-      </div>
-
-      <div className="mt-5 grid xs:grid-cols-1 lg:grid-cols-2 xs:m-5 md:m-12 gap-5 pb-8">
-        {fellowsData.map((cardData, index) => (
-          <FellowCard
-            key={index}
-            name={cardData.name}
-            position={cardData.position}
-            image={cardData.image}
-            description={cardData.description}
-          />
-        ))}
-      </div>
-    </section>
-  )
+  );
 }
 
 const AboutUs: NextPage<any> = () => {
@@ -186,13 +141,9 @@ const AboutUs: NextPage<any> = () => {
         <Background />
         <main className='relative w-full min-h-screen bg-transparent'>
           <TopSection />
-
-
           <NationalDirectors />
 
-          <RegionalDirectors />
-
-          <Fellows />
+          <USMap />
         </main>
       </div>
     </Layout>
