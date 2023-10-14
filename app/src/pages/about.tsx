@@ -86,7 +86,7 @@ const USMap = () => {
   return (
     <section className="my-8">
       <div className="bg-slate-400 rounded-lg mx-12 mb-8">
-        <div className="flex flex-row justify-center pt-12 text-4xl flex border-2 border-gray-900 ">
+        <div className="flex flex-row justify-center pt-12 text-4xl flex border-2 border-black">
           <div className="mt-8">
             <svg width="1100" height="600">
               <g id="map">

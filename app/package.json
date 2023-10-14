@@ -16,15 +16,15 @@
     "chart.js": "^4.2.0",
     "cookie": "^0.5.0",
     "mongoose": "^6.0.12",
-    "next": "^12.0.3",
-    "react": "17.0.2",
+    "next": "^13.5.4",
+    "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
-    "react-dom": "17.0.2",
+    "react-dom": "18.2.0",
     "react-router-dom": "^6.10.0",
     "react-toastify": "^9.1.2",
     "react-tsparticles": "^1.36.0",
-    "react-typewriter-hook": "^1.0.1",
-    "swr": "^1.0.1",
+    "react-typewriter-hook": "^1.0.2",
+    "swr": "2.2.4",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
@@ -39,7 +39,7 @@
     "js-cookie": "^3.0.1",
     "postcss": "^8.4.14",
     "prisma": "^4.11.0",
-    "tailwindcss": "^3.0.24",
+    "tailwindcss": "^3.3.3",
     "ts-node": "^10.9.1",
     "typescript": "^4.7.4"
   }
