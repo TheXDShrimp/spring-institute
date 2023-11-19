@@ -127,44 +127,46 @@ const USMap = () => {
 
         <div className="flex flex-col place-items-center pb-8">
           <h2 className="text-white text-6xl font-black xs:mx-12 md:mx-24 mt-4">Welcome to {selectedState}</h2>
-          <div className="px-36 text-white text-center text-lg font-medium ">
-            <p>
-              Overseer: {stateInfo ? stateInfo.overseer : "N/A"}
-            </p>
-            <p>
-              Contact: {stateInfo ? <ContactButton displayString={stateInfo.contact} emailAddress={stateInfo.contact} /> : "N/A"}
-            </p>
+          <div className="px-16">
+            <div className="px-36 text-white text-center text-lg font-medium ">
+              <p>
+                Overseer: {stateInfo ? stateInfo.overseer : "N/A"}
+              </p>
+              <p>
+                Contact: {stateInfo ? <ContactButton displayString={stateInfo.contact} emailAddress={stateInfo.contact} /> : "N/A"}
+              </p>
+            </div>
+
+            {stateInfo && stateInfo.regionalDirectors && (
+              <div>
+                <h3 className="text-white text-3xl mt-8">Regional Directors:</h3>
+                <ul>
+                  {stateInfo.regionalDirectors.map((director) => (
+                    <li key={director.name}>
+                      <h4>{director.name}</h4>
+                      <p>{director.title}</p>
+                      <p>{director.description}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {stateInfo && stateInfo.fellows && (
+              <div>
+                <h3 className="text-white text-3xl mt-8">Fellows:</h3>
+                <ul>
+                  {stateInfo.fellows.map((fellow) => (
+                    <li key={fellow.name}>
+                      <h4>{fellow.name}</h4>
+                      <p>{fellow.position}</p>
+                      <p>{fellow.description}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
-
-          {stateInfo && stateInfo.regionalDirectors && (
-            <div>
-              <h3 className="text-white text-3xl mt-8">Regional Directors:</h3>
-              <ul>
-                {stateInfo.regionalDirectors.map((director) => (
-                  <li key={director.name}>
-                    <h4>{director.name}</h4>
-                    <p>{director.title}</p>
-                    <p>{director.description}</p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          {stateInfo && stateInfo.fellows && (
-            <div>
-              <h3 className="text-white text-3xl mt-8">Fellows:</h3>
-              <ul>
-                {stateInfo.fellows.map((fellow) => (
-                  <li key={fellow.name}>
-                    <h4>{fellow.name}</h4>
-                    <p>{fellow.position}</p>
-                    <p>{fellow.description}</p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
         </div>
       </div>
 
@@ -181,7 +183,6 @@ const AboutUs: NextPage<any> = () => {
         <main className='relative w-full min-h-screen bg-transparent'>
           <TopSection />
           <NationalDirectors />
-
           <USMap />
         </main>
       </div>
