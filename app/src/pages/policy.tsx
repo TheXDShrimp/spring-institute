@@ -96,6 +96,40 @@ const Pages: NextPage<any> = () => {
             <div className="pl-4 sm:px-16 md:px-32 py-20">
                 <SinglePolicy
                     type="POLICY BRIEF"
+                    title="A Report on America's Debt Ceiling"
+                    date="October 29, 2023"
+                    authors="Hanming Sun, Gia Mendonca, Aanya Baddela, Jayden Liu, Arik Karim et al."
+                    image="/images/debtceiling.jpg"
+                    description="The debt ceiling, which is the limit on the amount of national debt that can be incurred 
+                    by the U.S. Treasury as outlined by the legislature, is an institution that has historically faced 
+                    immense controversy over its practicality and constitutionality. Today, it serves as a guideline to 
+                    ensure reasonable expenditure by the U.S. government. However, it is once again rapidly being approached, 
+                    particularly due to existing domestic initiatives and foreign aid, and it is imperative that measures are 
+                    taken to ensure that the American economy does not collapse due to unpayable debt. Should the debt ceiling 
+                    be surpassed, there would be catastrophic effects on the country's credit score, emplyment and inflation 
+                    rates, and borrowing costs. This meta-analysis study reviews past approaches, stakeholder analyses, and 
+                    public sentiment regarding the debt ceiling crisis, then outlines several recommended courses of action 
+                    based on empirical data from previous instances of fiscal crises."
+                    link="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4616329"
+                />
+                
+                <SinglePolicy
+                    type="POLICY BRIEF"
+                    title="Report on Minimum Wage: Federal and State Recommendations"
+                    date="October 19, 2023"
+                    authors="Arik Karim, Sophia Li, Ethan Wilkes, Shreyes Ram, and Brian Zhou."
+                    image="/images/minwage.jpg"
+                    description="The COVID-19 pandemic, paired with increased inflationary pressures, have worsened 
+                    the labor crisis afflicting millions of minimum wage workers across the United States. Increased 
+                    minimum wages have the potential to promote upward mobility, and importantly, create a grand vision 
+                    for equitable pay & treatment of workers in tandem with profit. We analyze the relevant stakeholders 
+                    to determine the viability of federal minimum wage increases in the and suggest comprehensive policy 
+                    action to catalyze minimum wage increases across the United States to address this labor crisis."
+                    link="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4607088"
+                />
+                
+                <SinglePolicy
+                    type="POLICY BRIEF"
                     title="Policy Proposals for the United Kingdom's National Quantum Strategy"
                     date="September 22, 2023"
                     authors="Brian Zhou, Brayden Lee, Arik Karim, Gia Mendonca, Hanming Sun et al."
