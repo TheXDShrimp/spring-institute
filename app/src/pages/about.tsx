@@ -126,14 +126,14 @@ const USMap = () => {
         </div>
 
         <div className="flex flex-col place-items-center pb-8">
-          <h2 className="text-white text-6xl font-black xs:mx-12 md:mx-24 mt-4">Welcome to {selectedState}</h2>
+          <h2 className="text-white text-6xl font-black xs:mx-12 md:mx-24 mt-4 pb-2">Welcome to {selectedState}</h2>
           <div className="px-16">
-            <div className="px-36 text-white text-center text-lg font-medium ">
+            <div className="px-36 text-white text-center text-lg font-medium">
               <p>
-                Overseer: {stateInfo ? stateInfo.overseer : "N/A"}
+                Overseer: {stateInfo ? stateInfo.overseer : "Coming Soon!"}
               </p>
               <p>
-                Contact: {stateInfo ? <ContactButton displayString={stateInfo.contact} emailAddress={stateInfo.contact} /> : "N/A"}
+                Contact: {stateInfo ? <ContactButton displayString={stateInfo.contact} emailAddress={stateInfo.contact} /> : "Coming Soon!"}
               </p>
             </div>
 
