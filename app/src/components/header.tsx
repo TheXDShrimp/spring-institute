@@ -7,7 +7,7 @@ import { useSession } from './SessionProvider';
 
 const NavLink = ({ index, href, name, textColor = 'text-white hover:text-green', disabled = false, onClick = () => { } }) => {
   return (
-    <Link href={disabled ? "" : href} passHref>
+    <Link legacyBehavior href={disabled ? "" : href} passHref>
       <a className={` ${disabled ? 'opacity-30' : ''} font-bold mb-2 md:mx-4 md:mb-0 ${textColor} text-md transition-all`} onClick={onClick}><span className='text-green'></span>{name}</a>
     </Link>
   );
@@ -54,7 +54,7 @@ const NavBar = ({ mode = 'dark' }) => {
     <nav className={`relative h-ful bg-white ${mode == 'dark' ? (atTop ? 'bg-opacity-10' : 'bg-opacity-25') : 'bg-opacity-100'} flex items-center justify-between z-10 py-2 px-4 sm:px-12 lg:px-24 transition-all ease-in-out duration-500`}>
       <div className='flex relative z-20'>
         <HamburgerButton open={isOpen} color={color} onClick={() => setOpen(!isOpen)} />
-        <Link href="/" passHref>
+        <Link legacyBehavior href="/" passHref>
           <a className="relative ml-4 w-6 md:w-12 aspect-square opacity-90 hover:opacity-100 transition-all ease-in-out">
             <Image src={logoSource} alt="Logo" layout="fill" />
           </a>

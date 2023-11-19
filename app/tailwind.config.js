@@ -32,7 +32,13 @@ module.exports = {
         },
         lightGreen: {
           DEFAULT: '#F5FFEC'
+        }, 
+        richGreen: {
+          DEFAULT: '#023020'
         }
+      },
+      scale: {
+        '400': '4.0'
       },
     },
   },

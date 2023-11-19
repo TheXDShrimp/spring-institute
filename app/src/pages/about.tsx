@@ -5,9 +5,10 @@ import React from "react";
 import { Layout } from "@/components/layout";
 import Background from "@/components/HomeBackground"
 import ColoredLine from "@/components/horizontalRule";
+import ContactButton from '../components/ContactButton';
 
 import { nationalDirectorsData } from "./api/nationalDirectorsData";
-import peopleData from "./api/data";
+import peopleData from "./api/peopleData";
 import usMapData from "./api/usmap"
 
 import anime from 'animejs';
@@ -28,14 +29,14 @@ const SingleCard = ({ name = "", position = "", image = "/favicon-16x16.png", de
   }, []);
 
   return (
-    <div className="md:flex md:flex-row ml-4 py-4 px-4" ref={cardRef}>
+    <div className="md:flex md:flex-row ml-4 py-4 px-4 bg-richGreen rounded-2xl shadow-xl" ref={cardRef}>
       <div className="rounded-full mr-3 border-black flex flex-row justify-center items-center">
-        <Image src={"/images/" + image} alt="" width={150} height={150} layout="fixed" className="rounded-full" />
+        <Image src={"/images/" + image} alt="" width={550} height={550} layout="fixed" className="rounded-full" />
       </div>
 
       <div className="pl-2 text-white">
         <h2 className="font-black text-3xl">{name} - {position}</h2>
-        <p className="pt-4">{description}</p>
+        <p className="pt-4 text-sm">{description}</p>
       </div>
     </div>
   );
@@ -44,7 +45,7 @@ const SingleCard = ({ name = "", position = "", image = "/favicon-16x16.png", de
 const TopSection: NextPage<any> = () => {
   return (
     <div className="flex flex-col place-items-center">
-      <h1 className="text-white text-8xl font-black xs:mx-12 md:mx-24 mt-24" >About Us</h1>
+      <h1 className="text-white text-8xl font-black mx-12 mt-24" >About Us</h1>
       <p className="px-36 text-white text-center text-lg font-medium mt-8">
         We believe that we have a crucial role to play in shaping the policies that affect us and our communities.
         That's why we've come together as a group of dedicated high school advocates, determined to make our voices heard.
@@ -56,11 +57,11 @@ const TopSection: NextPage<any> = () => {
 
 const NationalDirectors: NextPage<any> = () => {
   return (
-    <section>
+    <section className="">
       <div className="flex flex-row justify-center pt-12 text-4xl">
         <h1>National Directors</h1>
       </div>
-      <div className="mt-5 grid xs:grid-cols-1 lg:grid-cols-2 xs:m-5 md:m-12 gap-5 pb-8">
+      <div className="mt-5 grid xs:grid-cols-1 lg:grid-cols-2 xs:m-5 md:m-12 gap-4 pb-8">
         {nationalDirectorsData.map((cardData, index) => (
           <SingleCard
             key={index}
@@ -83,9 +84,11 @@ const USMap = () => {
     setSelectedState(stateName);
   };
 
+  const stateInfo = peopleData.find((state) => state.stateName === selectedState);
+
   return (
     <section className="my-8">
-      <div className="bg-slate-400 rounded-lg mx-12 mb-8">
+      <div className="bg-slate-400 rounded-lg ml-16 mr-12 mb-8">
         <div className="flex flex-row justify-center pt-12 text-4xl flex border-2 border-black">
           <div className="mt-8">
             <svg width="1100" height="600">
@@ -124,8 +127,44 @@ const USMap = () => {
 
         <div className="flex flex-col place-items-center pb-8">
           <h2 className="text-white text-6xl font-black xs:mx-12 md:mx-24 mt-4">Welcome to {selectedState}</h2>
-          <p className="px-36 text-white text-center text-lg font-medium mt-8"> Contact: </p>
-          <p> Overseer: </p>
+          <div className="px-36 text-white text-center text-lg font-medium ">
+            <p>
+              Overseer: {stateInfo ? stateInfo.overseer : "N/A"}
+            </p>
+            <p>
+              Contact: {stateInfo ? <ContactButton displayString={stateInfo.contact} emailAddress={stateInfo.contact} /> : "N/A"}
+            </p>
+          </div>
+
+          {stateInfo && stateInfo.regionalDirectors && (
+            <div>
+              <h3 className="text-white text-3xl mt-8">Regional Directors:</h3>
+              <ul>
+                {stateInfo.regionalDirectors.map((director) => (
+                  <li key={director.name}>
+                    <h4>{director.name}</h4>
+                    <p>{director.title}</p>
+                    <p>{director.description}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {stateInfo && stateInfo.fellows && (
+            <div>
+              <h3 className="text-white text-3xl mt-8">Fellows:</h3>
+              <ul>
+                {stateInfo.fellows.map((fellow) => (
+                  <li key={fellow.name}>
+                    <h4>{fellow.name}</h4>
+                    <p>{fellow.position}</p>
+                    <p>{fellow.description}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
 

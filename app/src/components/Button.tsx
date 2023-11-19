@@ -22,7 +22,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 
     if (link.length > 0) {
       return (
-        <Link href={link} passHref>
+        <Link legacyBehavior href={link} passHref>
           <a>{btn}</a>
         </Link>
       );
