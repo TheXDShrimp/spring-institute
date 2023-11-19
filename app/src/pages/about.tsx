@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useState, useEffect, useLayoutEffect, useRef } from "react";
 import React from "react";
 import { Layout } from "@/components/layout";
@@ -31,7 +31,7 @@ const SingleCard = ({ name = "", position = "", image = "/favicon-16x16.png", de
   return (
     <div className="md:flex md:flex-row ml-4 py-4 px-4 bg-richGreen rounded-2xl shadow-xl" ref={cardRef}>
       <div className="rounded-full mr-3 border-black flex flex-row justify-center items-center">
-        <Image src={"/images/" + image} alt="" width={550} height={550} layout="fixed" className="rounded-full" />
+        <Image src={"/images/" + image} alt="" width={200} height={200} layout="fixed" className="rounded-full" />
       </div>
 
       <div className="pl-2 text-white">
@@ -139,28 +139,29 @@ const USMap = () => {
 
             {stateInfo && stateInfo.regionalDirectors && (
               <div>
-                <h3 className="text-white text-3xl mt-8">Regional Directors:</h3>
-                <ul>
+                <h3 className="text-white text-3xl mt-8 pb-2">Regional Directors:</h3>
+                <ul className="pb-4 pl-8">
                   {stateInfo.regionalDirectors.map((director) => (
-                    <li key={director.name}>
-                      <h4>{director.name}</h4>
-                      <p>{director.title}</p>
-                      <p>{director.description}</p>
+                    <li key={director.name} className="pb-2">
+                      <h4 className="text-lg font-semibold">{director.name}</h4>
+                      <p className="text-gray-500">{director.title}</p>
+                      <p className="text-gray-700">{director.description}</p>
                     </li>
                   ))}
                 </ul>
               </div>
             )}
 
+
             {stateInfo && stateInfo.fellows && (
               <div>
-                <h3 className="text-white text-3xl mt-8">Fellows:</h3>
-                <ul>
+                <h3 className="text-white text-3xl mt-8 pb-2">Fellows:</h3>
+                <ul className="pb-4 pl-8">
                   {stateInfo.fellows.map((fellow) => (
-                    <li key={fellow.name}>
-                      <h4>{fellow.name}</h4>
-                      <p>{fellow.position}</p>
-                      <p>{fellow.description}</p>
+                    <li key={fellow.name} className="pb-2">
+                      <h4 className="text-lg font-semibold">{fellow.name}</h4>
+                      <p className="text-gray-500">{fellow.position}</p>
+                      <p className="text-gray-700">{fellow.description}</p>
                     </li>
                   ))}
                 </ul>

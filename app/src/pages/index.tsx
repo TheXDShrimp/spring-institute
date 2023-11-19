@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useState, useEffect, useLayoutEffect, useRef } from "react";
 import React from "react";
 import { Layout } from "@/components/layout";

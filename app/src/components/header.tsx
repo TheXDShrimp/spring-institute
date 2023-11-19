@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import OutlineButton from "./Button";
 import Link from "next/link";
 import { useEffect, useState } from 'react';
