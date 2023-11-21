@@ -130,7 +130,7 @@ const USMap = () => {
           <div className="px-16">
             <div className="px-36 text-richGreen text-center text-lg font-medium">
               <p>
-                Overseer: {stateInfo ? stateInfo.overseer : "Coming Soon!"}
+                National Director: {stateInfo ? stateInfo.overseer : "Coming Soon!"}
               </p>
               <p>
                 Contact: {stateInfo ? <ContactButton displayString={stateInfo.contact} emailAddress={stateInfo.contact} /> : "Coming Soon!"}
