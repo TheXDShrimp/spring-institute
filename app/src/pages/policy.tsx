@@ -22,7 +22,7 @@ const TopSection = () => {
             setText((prevText) => prevText + policyText[currentIndex]);
             currentIndex++;
 
-            if (currentIndex === policyText.length) {
+            if (currentIndex === policyText.length - 1) {
                 setIsTyping(false);
                 return;
             }

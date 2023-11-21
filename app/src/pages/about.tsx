@@ -31,10 +31,10 @@ const SingleCard = ({ name = "", position = "", image = "/favicon-16x16.png", de
   return (
     <div className="md:flex md:flex-row ml-4 py-4 px-4 bg-richGreen rounded-2xl shadow-xl" ref={cardRef}>
       <div className="rounded-full mr-3 border-black flex flex-row justify-center items-center">
-        <Image src={"/images/" + image} alt="" width={200} height={200} layout="fixed" className="rounded-full" />
+        <Image src={"/images/" + image} alt="" width={150} height={150} layout="fixed" className="rounded-full" />
       </div>
 
-      <div className="pl-2 text-white">
+      <div className="pt-2 pl-2 text-white">
         <h2 className="font-black text-3xl">{name} - {position}</h2>
         <p className="pt-4 text-sm">{description}</p>
       </div>
@@ -88,7 +88,7 @@ const USMap = () => {
 
   return (
     <section className="my-8">
-      <div className="bg-slate-400 rounded-lg ml-16 mr-12 mb-8">
+      <div className="bg-orange-100 rounded-lg ml-16 mr-12 mb-8">
         <div className="flex flex-row justify-center pt-12 text-4xl flex border-2 border-black">
           <div className="mt-8">
             <svg width="1100" height="600">
@@ -126,9 +126,9 @@ const USMap = () => {
         </div>
 
         <div className="flex flex-col place-items-center pb-8">
-          <h2 className="text-white text-6xl font-black xs:mx-12 md:mx-24 mt-4 pb-2">Welcome to {selectedState}</h2>
+          <h2 className="text-green-900 text-6xl font-black xs:mx-12 md:mx-24 mt-4 pb-2">Welcome to {selectedState}</h2>
           <div className="px-16">
-            <div className="px-36 text-white text-center text-lg font-medium">
+            <div className="px-36 text-richGreen text-center text-lg font-medium">
               <p>
                 Overseer: {stateInfo ? stateInfo.overseer : "Coming Soon!"}
               </p>
@@ -139,7 +139,7 @@ const USMap = () => {
 
             {stateInfo && stateInfo.regionalDirectors && (
               <div>
-                <h3 className="text-white text-3xl mt-8 pb-2">Regional Directors:</h3>
+                <h3 className="text-green-900 text-3xl mt-8 pb-2 font-medium">Regional Directors:</h3>
                 <ul className="pb-4 pl-8">
                   {stateInfo.regionalDirectors.map((director) => (
                     <li key={director.name} className="pb-2">
@@ -155,7 +155,7 @@ const USMap = () => {
 
             {stateInfo && stateInfo.fellows && (
               <div>
-                <h3 className="text-white text-3xl mt-8 pb-2">Fellows:</h3>
+                <h3 className="text-green-900 text-3xl mt-8 pb-2 font-medium">Fellows:</h3>
                 <ul className="pb-4 pl-8">
                   {stateInfo.fellows.map((fellow) => (
                     <li key={fellow.name} className="pb-2">

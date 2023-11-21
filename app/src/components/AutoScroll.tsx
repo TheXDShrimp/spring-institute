@@ -21,7 +21,7 @@ const AutoScroll = ({ children }) => {
         const distances = [...sections].map(section => Math.abs(section.getBoundingClientRect().top));
         const closestSection = sections[distances.indexOf(Math.min(...distances))];
         closestSection.scrollIntoView({ behavior: 'smooth' });
-      }, 500);
+      }, 700);
     };
 
     let timer = null;

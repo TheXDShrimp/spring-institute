@@ -12,7 +12,7 @@ export const nationalDirectorsData = [
         description: "A senior at Dreyfoos School of the Arts in West Palm Beach, Florida, Arik is interested in exploring the convergence of international relations, philosophy, and public policy. Outside of SPRING, Arik is the captain of his school's debate team and volunteers for bringing the arts to underprivileged youth in Palm Beach County. He enjoys reading, music, and biking."
     },
     {
-        name: "Anant Khandelwal",
+        name: "Jay Khandelwal",
         position: "Director of Chapters",
         image: "anant.png",
         description: "A senior at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Anant is interested in both Machine Learning and Mathematics. Aside from school, Anant enjoys debating and researching concepts in machine learning. His hobbies include weightlifting, playing tennis and ping pong, and reading."
