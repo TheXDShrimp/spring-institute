@@ -1,8 +1,9 @@
 import Image from "next/legacy/image";
-import Particles, { IOptions, RecursivePartial } from "react-tsparticles";
+import Particles from "react-tsparticles";
+
 
 const Background = ({ className="" }) => {
-  const particleParams: RecursivePartial<IOptions> = {
+  const particleParams = {
     "particles": {
       "number": {
         "value": 60,
@@ -90,7 +91,87 @@ const Background = ({ className="" }) => {
       </div>
       <Particles
         className={`w-full h-full opacity-50`}
-        options={particleParams}
+        params={{
+          "particles": {
+            "number": {
+              "value": 60,
+              "density": {
+                "enable": true,
+                 "area": 600
+              }
+            },
+            "color": {
+              "value": "#ffffff"
+            },
+            "size": {
+              "value": 25,
+              "random": true
+            },
+            "shape": {
+              "type": "image",
+              "image": {
+                "src": "/images/leaf.png",
+              }
+            },
+            "opacity": {
+              "value": 0.9,
+              "random": true,
+            },
+            "move": {
+              "enable": true,
+              "speed": {min: 1, max: 2},
+              "direction": "bottom",
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": false,
+                "mode": "repulse"
+              },
+              "onclick": {
+                "enable": false,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 800,
+                "line_linked": {
+                  "opacity": 1
+                }
+              },
+              "bubble": {
+                "distance": 800,
+                "size": 80,
+                "duration": 2,
+                "opacity": 0.8,
+                // "speed": 3
+              },
+              "repulse": {
+                "distance": 400,
+                "duration": 0.4
+              },
+              "push": {
+                "particles_nb": 4
+              },
+              "remove": {
+                "particles_nb": 2
+              }
+            }
+          },
+          "retina_detect": true,
+        }}
       />
     </div>
   );
