@@ -12,7 +12,8 @@ const TopSection = () => {
     const [isTyping, setIsTyping] = useState(true);
 
     useEffect(() => {
-        const policyText = "The Institute @ SPRING produces policy briefs, memos, opinions, and interviews that cover current events and interdisciplinary topics. These publications aim to offer insights into ongoing issues, promote legislative change, and mobilize advocacy and support among the youth.";
+        setText('')
+        const policyText = "   The Institute @ SPRING produces policy briefs, memos, opinions, and interviews that cover current events and interdisciplinary topics. These publications aim to offer insights into ongoing issues, promote legislative change, and mobilize advocacy and support among the youth.";
         const typingDelay = 20;
 
         let currentIndex = 0;

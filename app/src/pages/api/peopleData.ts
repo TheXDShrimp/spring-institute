@@ -324,7 +324,7 @@ const peopleData = [
             },
 
             {
-                name:"Varun Mukund",
+                name:"Varunk Mukund",
                 title:"Director, Washington Region",
                 image:"ksun.JPG",
                 description:"A junior at Greenhill School in Addison Texas, Varun is passionate about corporate and environmental law, public policy, and government. Outside of SPRING, Varun is an avid debater and violinist. He enjoys playing basketball and hanging out with friends."
