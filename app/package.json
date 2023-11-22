@@ -22,7 +22,7 @@
     "react-dom": "^16.4.0",
     "react-router-dom": "^6.10.0",
     "react-toastify": "^9.1.2",
-    "react-tsparticles": "^1.36.0",
+    "react-tsparticles": "^1.43.1",
     "react-typewriter-hook": "^1.0.2",
     "swr": "2.2.4",
     "uuid": "^9.0.0"
