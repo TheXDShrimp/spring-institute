@@ -515,6 +515,12 @@ const peopleData = [
                 image: "ksun.JPG",
                 description: "A incoming senior at Dougherty Valley High School in San Ramon, California. Nimish is interested in studying economics. Outside of SPRING, Nimish is treasure of his debate team and president of multiple other clubs at his school. He enjoys hiking, cooking, playing basketball and swimming. "
             },
+
+            {
+                name: "Vincent Nguyen",
+                image: "ksun.JPG",
+                description: "A junior at Bellarmine College Preparatory School in San Jose, California, Vincent is passionate in public policy and law. Outside of SPRING, Vincent has been competing in Speech and Debate for over 6 years and works as a part-time coach. He also founded his school's Mock Trial team for others to share his love of law. He enjoys lifting weights, playing Rugby, and listening to Morgan Wallen. "
+            },
         ]
     },
 
@@ -553,6 +559,83 @@ const peopleData = [
 
 
 
+    {
+        stateName: "Illinois",
+        nameDisplay: "Illinois",
+        contact: "chapter.il@thespringgroup.org",
+        overseer: "Brian Zhou",
+        region: "Midwest",
+        regionalDirectors: [
+            {
+                name: "Placeholder",
+                title: "Director, Illinois Region",
+                image: "ksun.JPG",
+                description: "Placeholder"
+            },
+
+        ],
+        fellows: [
+            {
+                name: "C.J. Getting",
+                image: "ksun.JPG",
+                description: "A junior at Naperville Central High School in Illinois, C.J. is interested in studying law, politics, and public policy. Outside of SPRING, C.J. is a member of the USA Debate Education Program, News Editor for his school's newspaper, and Vice President of Student Government."
+            },
+        ]
+    },
+
+
+    {
+        stateName: "Michigan",
+        nameDisplay: "Michigan",
+        contact: "chapter.mi@thespringgroup.org",
+        overseer: "Brian Zhou",
+        region: "Midwest",
+        regionalDirectors: [
+            {
+                name: "William Zhang",
+                title: "Director, Michican Region",
+                image: "ksun.JPG",
+                description: "William is a sophomore at International Academy Okma in Michigan and is interested in studying economics as well as the subjects in STEM. He loves to read, play games, and go on road trips. Outside of SPRING, he is the founder and captain of his school's debate team and participates in STEM competitions such as AMC and F=MA."
+            },
+
+        ],
+        fellows: [
+            {
+                name: "Leona",
+                image: "ksun.JPG",
+                description: "Hi I’m Leona! i’m a sophomore at Okma International Academy, alongside SPRING, im a member of debate, Model United Nations  and BuildOn at my high school. I row for the Detroit Boat Club, I enjoy painting, reading and swimming in my free time.  "
+            },
+        ]
+    },
+
+
+
+
+
+    {
+        stateName: "South Carolina",
+        nameDisplay: "South Carolina",
+        contact: "chapter.sc@thespringgroup.org",
+        overseer: "Brian Zhou",
+        region: "South",
+        regionalDirectors: [
+            {
+                name: "Placeholder",
+                title: "Director, South Carolina Region",
+                image: "ksun.JPG",
+                description: "Placeholder"
+            },
+
+        ],
+        fellows: [
+            {
+                name: "Leona",
+                image: "ksun.JPG",
+                description: "A Senior at Beaufort High School in Beaufort, South Carolina, Mak is interested in studying international environmental policy and environmental engineering. Outside of SPRING, Mak is the captain of one of their school's robotics teams. They enjoy reading, playing the electric guitar, and experimentally cooking. "
+            },
+        ]
+    },
+
 
     {
         stateName: "Florida",
@@ -581,6 +664,18 @@ const peopleData = [
                 image: "ksun.JPG",
                 description: "Lila Cohen is a junior at American Heritage High School in Plantation, Florida who enjoys debate, pre-law studies, and math competition. Often seen with her head buried in a book, when she isn’t reading she can be found with friends, listening to music, or researching policy."
             },
+
+            {
+                name: "Enan Khan",
+                image: "ksun.JPG",
+                description: " A sophomore at American Heritage High School in Delray Beach, Florida, Enan is interested in studying the intersectionality between new research and technology and their implications on future politics. Aside from school, Enan enjoys participating in debate, math competition, and DECA. Some of his favorite hobbies including cooking, football, and ping pong."
+            },
+
+            {
+                name: "Lila Cohen",
+                image: "ksun.JPG",
+                description: "Lila Cohen is a junior at American Heritage High School in Plantation, Florida who enjoys debate, pre-law studies, and math competition. Often seen with her head buried in a book, when she isn’t reading she can be found with friends, listening to music, or researching policy."
+            },
         ]
     },
 
@@ -600,6 +695,13 @@ const peopleData = [
                 title: "Director, Georgia Region",
                 image: "ksun.JPG",
                 description: "Gia Mendonca is a business, law, and computer science focused senior at Lambert High School in Forsyth County in Georgia. Outside of SPRING, Gia is a an active member of Model United Nations, a Mock Trial attorney, and the Secretary of her school's TEDEd Club. She is an avid music lover with 12 years of experience in Indian and Western classical singing and loves going on long bike rides and spending time with her friends."
+            },
+
+            {
+                name: "Claire Kim",
+                title: "Lead, Georgia Region",
+                image: "ksun.JPG",
+                description: "A sophomore at South Forsyth High School in Forsyth County, Georgia, Claire is interested in studying law and policy. Outside of SPRING, Claire is an attorney for her school's mock trial team and an officer for her school's UNICEF club. She enjoys listening to true crime podcasts and traveling."
             },
 
         ],
@@ -667,6 +769,17 @@ const peopleData = [
                 name: "Colton Hong",
                 image: "ksun.JPG",
                 description: "A sophomore at Anacortes High School in Washington, Colton was the sole debater of his high school team. Debate has given him a contagious passion for quantitative policy research and foreign relations. Outside of SPRING, Colton enjoys DJing and snapping pics of his foodie adventures."
+            }, 
+            {
+                name: "Grace Lee",
+                image: "ksun.JPG",
+                description: "A junior at Glacier Peak High School in Snohomish,  WA, Grace is deeply interested in studying the policies abd legislative decisions surrounding us. She is a policy debater and speaker in many speech events in her debate team. Grace immerses herself in reading the news, writing, and exploring new things in her free time. "
+            },
+
+            {
+                name: "Dawn Rosas",
+                image: "ksun.JPG",
+                description: "A sophomore at Mount Vernon High School, Dawn hopes to one day study international relations or political science. Outside of SPRING, Dawn is part of her school’s student council, Teen Court, Key Club and enjoys being a Mexican folkloric dancer!"
             }
         ]
     },
