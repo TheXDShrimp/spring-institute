@@ -46,6 +46,12 @@ export const nationalDirectorsData = [
         position: "Director of Media",
         image: "ezhang.png",
         description: "A sophomore at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Ella is a student with a keen interest in economics, engineering, and environmental science. In her free time, Ella enjoys swimming, baking, reading, and writing."
-    }
+    },
+    {
+        name: "Varun Mukund",
+        position: "Director of Law",
+        image: "vmukund.png",
+        description: "A junior at Greenhill School in Addison Texas, Varun is passionate about corporate and environmental law, public policy, and government. Outside of SPRING, Varun is an avid debater and violinist. He enjoys playing basketball and hanging out with friends. "
+    },
 
 ];
