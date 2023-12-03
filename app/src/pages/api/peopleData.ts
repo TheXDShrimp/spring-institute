@@ -687,7 +687,7 @@ const peopleData = [
         regionalDirectors: [
             {
                 name: "Gia Mendonca",
-                title: "Director, Georgia Region",
+                title: "Director, Georgia Region, and Assistant Director of National Operations",
                 image: "ksun.JPG",
                 description: "Gia Mendonca is a business, law, and computer science focused senior at Lambert High School in Forsyth County in Georgia. Outside of SPRING, Gia is a an active member of Model United Nations, a Mock Trial attorney, and the Secretary of her school's TEDEd Club. She is an avid music lover with 12 years of experience in Indian and Western classical singing and loves going on long bike rides and spending time with her friends."
             },
