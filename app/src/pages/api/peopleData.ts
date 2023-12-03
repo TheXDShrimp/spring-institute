@@ -296,6 +296,12 @@ const peopleData = [
                 image: "ksun.JPG",
                 description: "Venya Tiwari is a junior at Millburn High School interested in STEM and studying the intersection between policy and technology. Outside of SPRING, Venya is a part of her school’s Speech and Debate team, her school’s Rocketry team, and is a mentor for a club aimed to increase female participation in STEM. In her spare time, Venya has earned a Black belt in Taekwondo, likes to read, swim, and explore new cuisines. "
             },
+
+            {
+                name: "Arav Wahi",
+                image: "ksun.JPG",
+                description: "A junior at Millburn High School in Short Hills, New Jersey, Arav is interested in studying the intersections between politics, public policy, and economics. Outside of SPRING, Arav is a captain of his school's debate team, a researcher, and a web developer. He enjoys reading, playing sports like soccer and cricket, and traveling to new places across the country and around the world."
+            },
         ]
     },
 
@@ -483,6 +489,13 @@ const peopleData = [
                 image: "ksun.JPG",
                 description: "Joseph Nahas is a senior at La Salle College preparatory in Pasadena, California. He aspires to major in political science and is intrigued by the political and economic complex of our domestic nation and foreign countries. Outside of Spring, Joseph enjoys Public Forum debate, basketball, and cooking."
             },
+
+            {
+                name: "Sienna Vaughn",
+                title: "Director of Partnerships, California Region"
+                image: "ksun.JPG",
+                description: "Sienna Vaughn is a senior at Flintridge Preparatory School in La Canada, California. She is interested in political science, climate change reform, and the electoral process. Sienna is overall captain of her school's speech and debate team and on the cheer and dance team. She loves reading, spending time with friends, and listening to music. "
+            },
         ],
         fellows: [
             {
@@ -495,6 +508,12 @@ const peopleData = [
                 name: "William Trinh",
                 image: "ksun.JPG",
                 description: "Will is a senior at Heritage High School in Brentwood, California. He is primarily interested in studying public policy and its relationship with disenfranchised groups. Outside of SPRING, Will is a captain of his school's debate team and is interested in Asian and queer critical theory and governmental policy. He enjoys reading, cooking, and drinking copious amounts of coffee. "
+            },
+
+            {
+                name: "Nimish",
+                image: "ksun.JPG",
+                description: "A incoming senior at Dougherty Valley High School in San Ramon, California. Nimish is interested in studying economics. Outside of SPRING, Nimish is treasure of his debate team and president of multiple other clubs at his school. He enjoys hiking, cooking, playing basketball and swimming. "
             },
         ]
     },
@@ -794,6 +813,14 @@ const peopleData = [
                 image: " ",
                 description: "A junior at Pottsboro high school, Avery is interested in public policy as well as the study of international relations and law. Outside of SPRING, Avery is the captain of her debate tema as well as the leader of programs that help youth better their futures. Avery also enjoys reading boks, running, and listening to music."
             },
+
+            {
+                name: "Aneesh Kondagunturi",
+                position: "Fellow from Texas",
+                image: " ",
+                description: "Aneesh is a senior at Westlake High School. He is an officer of Westlake’s public forum team and enjoys researching current events and debating. He also enjoys listening to music, traveling, and playing basketball."
+            },
+
 
         ]
    
