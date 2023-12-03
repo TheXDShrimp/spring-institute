@@ -80,10 +80,6 @@ const peopleData = [
         ]
     },
 
-
-
-
-
     {
         stateName: "Maryland",
         nameDisplay: "DC-Maryland-Virginia Region",
@@ -165,11 +161,6 @@ const peopleData = [
         ]
     },
 
-
-
-
-
-
     {
         stateName: "District of Columbia",
         nameDisplay: "DC-Maryland-Virginia Region",
@@ -250,6 +241,10 @@ const peopleData = [
             },
         ]
     },
+
+
+
+
 
 
 
@@ -407,6 +402,40 @@ const peopleData = [
 
 
 
+    {
+        stateName: "Massachusetts",
+        nameDisplay: "New England Region",
+        contact: "chapter.neng@thespringgroup.org",
+        overseer: "Brian Zhou",
+        region: "New England",
+        regionalDirectors: [
+            {
+                name: "Neil Jiang",
+                title: "Director, Massachusetts Region",
+                image: "awu.png",
+                description: "A sophomore in Acton-Boxborough Regional High School in Massachusetts, Neil is passionate about making politics more accessible to younger generations as well as foreign and electoral policy. Outside of SPRING, Neil is an avid member of his debate team, interns for the United States House of Representatives, and is a lobbyist for ranked choice voting in his hometown."
+            },
+
+
+        ],
+        fellows: [
+            {
+                name: "Placeholder",
+                image: "achavali.jfif",
+                description: "Placeholder"
+            },
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
     
     {
         stateName: "Arizona",
@@ -493,9 +522,9 @@ const peopleData = [
         ],
         fellows: [
             {
-                name: "Placeholder",
+                name: "Andrew Xu",
                 image: "ksun.JPG",
-                description: "Placeholder"
+                description: "Andrew is a junior at East Chapel Hill High School in North Carolina. He loves studying and exploring various aspects our world, particularly economics and domestic politics. In addition, he is an avid debater, composer, and pianist."
             },
         ]
     },
@@ -579,6 +608,12 @@ const peopleData = [
                 image: "ksun.JPG",
                 description: "A senior at Lambert High School in Suwanee, Georgia, Chitvan is interested in the field of law and how legal issues surround our everyday lives. Exploring connections between the law and areas such as the corporate world and the medical field continue fuel his research interests. Outside of SPRING, Chitvan is the captain of his school's Mock Trial team and president of the National Latin Honor Society. He loves the outdoors and can usually be found asleep in a kayak somewhere."
             },
+
+            {
+                name: "Devang Doshi",
+                image: "ksun.JPG",
+                description: "A sophomore at Wheeler Magnet High School in Marietta, Georgia, Devang is interested in computer science, cybersecurity, and law. Outside of SPRING, Devang enjoys debating, playing chess, and playing basketball."
+            },
         ]
     },
 
@@ -639,7 +674,19 @@ const peopleData = [
                 name: "Meredith Yount",
                 image: "ksun.JPG",
                 description: "A sophomore at Brentwood High School in Brentwood, Tennessee, Meredith is interested in learning about and analyzing domestic and foreign legislature. Meredith is a part of her school's debate team, and outside of school, she enjoys running and bodybuilding."
-            }
+            },
+
+            {
+                name: "Chetan Yenigalla",
+                image: "ksun.JPG",
+                description: "A student at Ravenwood High School (Class of 2025) in Brentwood, Tennessee, Chetan is fascinated by the convergence of biomedicine and political science. He is a member of Ravenwood's Biomedical Science track and aspires to be a neurosurgeon. He is constantly immersed in science and politics from societies and activities such as Model UN, Public Forum Debate, and Science Olympiad just to name a few. Outside of SPRING, Chetan is a Marvel fan and binges TV shows with his friends and family."
+            },
+
+            {
+                name: "Parsa Khairollahi",
+                image: "ksun.JPG",
+                description: "A junior at Brentwood High School in Brentwood, Tennessee, Parsa is interested in foreign policy, cybersecurity, and engineering. He is involved in the Brentwood debate team and is president of the school's Cyberpatriot club. He enjoys playing Fortnite and reviewing food."
+            },
         ]
     },
 
