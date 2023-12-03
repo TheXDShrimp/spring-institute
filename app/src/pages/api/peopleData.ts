@@ -671,11 +671,6 @@ const peopleData = [
                 description: " A sophomore at American Heritage High School in Delray Beach, Florida, Enan is interested in studying the intersectionality between new research and technology and their implications on future politics. Aside from school, Enan enjoys participating in debate, math competition, and DECA. Some of his favorite hobbies including cooking, football, and ping pong."
             },
 
-            {
-                name: "Lila Cohen",
-                image: "ksun.JPG",
-                description: "Lila Cohen is a junior at American Heritage High School in Plantation, Florida who enjoys debate, pre-law studies, and math competition. Often seen with her head buried in a book, when she isn’t reading she can be found with friends, listening to music, or researching policy."
-            },
         ]
     },
 
