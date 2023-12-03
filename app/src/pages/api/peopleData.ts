@@ -40,42 +40,42 @@ const peopleData = [
                 name: "Abhiram Chavali",
                 position: "Fellow from Virginia",
                 image: "achavali.jfif",
-                description: "A freshman at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Abhiram is interested in studying law, international relations, and politics. Outside of SPRING, Abhiram enjoys competing in Model UN, reading, and spending time with friends."
+                description: "A sophomore at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Abhiram is interested in studying law, international relations, and politics. Outside of SPRING, Abhiram enjoys competing in Model UN, reading, and spending time with friends."
             },
 
             {
                 name: "Akshat Alok",
-                position: "Fellow from Virginia",
+                position: "Fellow from Virginia; SPRING Center for Generative AI",
                 image: "aalok.png",
-                description: "A junior at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Akshat is interested in studying the intersection of Computer Science, in particular machine learning, and Biology. Outside of SPRING, Akshat is a researcher, and enjoys hobbies like basketball, football, and listening to music."
+                description: "A senior at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Akshat is interested in studying the intersection of Computer Science, in particular machine learning, and Biology. Outside of SPRING, Akshat is a researcher, and enjoys hobbies like basketball, football, and listening to music."
             },
 
             {
                 name: "Camille Stephant",
                 position: "Fellow from Virginia",
                 image: "cstephant.png",
-                description: "A junior at McLean High in northern Virginia, Camille is interested in studying science, technology, and international affairs, focusing on biological concepts and the ethical application of new technologies throughout the world. Camille is the captain of her track team and the vice president of her high school’s UNICEF club. She enjoys hiking, baking, running, taking pictures, and spending time with friends."
+                description: "A senior at McLean High in northern Virginia, Camille is interested in studying science, technology, and international affairs, focusing on biological concepts and the ethical application of new technologies throughout the world. Camille is the captain of her track team and the vice president of her high school’s UNICEF club. She enjoys hiking, baking, running, taking pictures, and spending time with friends."
             },
 
             {
                 name: "George Schunk",
                 position: "Fellow from Virginia",
                 image: "gschunk.png",
-                description: "A junior at Washington-Liberty High School in Arlington, Virginia, George is interested in studying environmental foreign policy. Outside of SPRING, George is a varsity rower and a climber. He enjoys skateboarding, spending time with friends, and painting."
+                description: "A senior at Washington-Liberty High School in Arlington, Virginia, George is interested in studying environmental foreign policy. Outside of SPRING, George is a varsity rower and a climber. He enjoys skateboarding, spending time with friends, and painting."
             },
 
             {
                 name: "Ronit Kapur",
-                position: "Fellow from Virginia",
+                position: "Fellow from Virginia; SPRING Center for Generative AI",
                 image: "rkapur.png",
-                description: "A current junior at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Ronit is keen to explore both computational astrophysics and science policy. Outside of SPRING, Ronit conducts research and holds leadership positions in his school's Science Olympiad team, astronomy club, and astronomy team. He enjoys traveling, playing the piano, and photographing the night sky."
+                description: "A current senior at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Ronit is keen to explore both computational astrophysics and science policy. Outside of SPRING, Ronit conducts research and holds leadership positions in his school's Science Olympiad team, astronomy club, and astronomy team. He enjoys traveling, playing the piano, and photographing the night sky."
             },
 
             {
                 name: "Shaun Jones",
                 position: "Fellow from Virginia",
                 image: "sjones.png",
-                description: "A junior at Basis Independent McLean in McLean, Virginia, Shaun is interested in both social and economic policy on a nationwide scale. Outside of SPRING, Shaun is the founder of his school's political science club and is a core member of his school's debate team. He enjoys playing soccer, videogames, and video editing."
+                description: "A senior at Basis Independent McLean in McLean, Virginia, Shaun is interested in both social and economic policy on a nationwide scale. Outside of SPRING, Shaun is the founder of his school's political science club and is a core member of his school's debate team. He enjoys playing soccer, videogames, and video editing."
             },
         ]
     },
@@ -171,7 +171,7 @@ const peopleData = [
 
 
     {
-        stateName: "DC",
+        stateName: "District of Columbia",
         nameDisplay: "DC-Maryland-Virginia Region",
         contact: "chapter.dmv@thespringgroup.org",
         overseer: "Brian Zhou",
@@ -272,9 +272,15 @@ const peopleData = [
         ],
         fellows: [
             {
+                name: "Neil Kreibich",
+                image: "ksun.JPG",
+                description: "A senior at Bergen County Academies High School in Hackensack, New Jersey, Neil is chiefly interested in exploring the intersection between business economics and public policy. Outside of SPRING, Neil is captain of his school's speech & debate team, and representative of his legislative district as a member of the NJ Youth Council. He enjoys hiking, cycling, and reading."
+            },
+            
+            {
                 name: "Aarav Motivala",
                 image: "ksun.JPG",
-                description: "A freshman at Ridgewood High School in Bergen County, New Jersey, Aarav enjoys studying foreign policy and its relation to economics. Outside of SPRING, Aarav is both a debater and tennis player. He enjoys playing video games, baking, and walking his dog."
+                description: "A sophomore at Ridgewood High School in Bergen County, New Jersey, Aarav enjoys studying foreign policy and its relation to economics. Outside of SPRING, Aarav is both a debater and tennis player. He enjoys playing video games, baking, and walking his dog."
             },
 
             {
@@ -314,6 +320,12 @@ const peopleData = [
 
         ],
         fellows: [
+            {
+                name: "Neil Kreibich",
+                image: "ksun.JPG",
+                description: "A senior at Bergen County Academies High School in Hackensack, New Jersey, Neil is chiefly interested in exploring the intersection between business economics and public policy. Outside of SPRING, Neil is captain of his school's speech & debate team, and representative of his legislative district as a member of the NJ Youth Council. He enjoys hiking, cycling, and reading."
+            },
+            
             {
                 name: "Aarav Motivala",
                 image: "ksun.JPG",
@@ -358,6 +370,12 @@ const peopleData = [
         ],
         fellows: [
             {
+                name: "Neil Kreibich",
+                image: "ksun.JPG",
+                description: "A senior at Bergen County Academies High School in Hackensack, New Jersey, Neil is chiefly interested in exploring the intersection between business economics and public policy. Outside of SPRING, Neil is captain of his school's speech & debate team, and representative of his legislative district as a member of the NJ Youth Council. He enjoys hiking, cycling, and reading."
+            },
+            
+            {
                 name: "Aarav Motivala",
                 image: "ksun.JPG",
                 description: "A freshman at Ridgewood High School in Bergen County, New Jersey, Aarav enjoys studying foreign policy and its relation to economics. Outside of SPRING, Aarav is both a debater and tennis player. He enjoys playing video games, baking, and walking his dog."
@@ -385,6 +403,109 @@ const peopleData = [
     },
 
 
+
+
+
+
+    
+    {
+        stateName: "Arizona",
+        nameDisplay: "Arizona",
+        contact: "chapter.az@thespringgroup.org",
+        overseer: "Jake Zeng",
+        region: "West",
+        regionalDirectors: [
+            {
+                name: "Sebastian Saenz",
+                title: "Director, Arizona Region",
+                image: "ksun.JPG",
+                description: "A senior at Phoenix Country Day school in Phoenix, Arizona, Sebastian is interested in studying computer science and also economics. Outside of SPRING, Sebastian is the captain if his school's debate team and a member of the tennis team. He enjoys reading, meeting new people, and spending time with family. "
+            },
+
+        ],
+        fellows: [
+            {
+                name: "Nathan Conley",
+                image: "ksun.JPG",
+                description: "A sophomore at Phoenix Country Day School in Phoenix, Arizona, Nathan is interested in policy, engineering, and industrial economics. Outside of SPRING, Nathan competes in Debated volunteers with Boys Team Charity. He likes history, weightlifting, and researching."
+            },
+
+            {
+                name: "Siddharth Vadnerkar",
+                image: "ksun.JPG",
+                description: "A sophomore at Phoenix Country Day School in Phoenix, Arizona, Sid is interested in the hard sciences and math. Outside of SPRING, Sid is a member of his school’s speech and debate team and student council while playing saxophone in a few bands, both in and out of school."
+            },
+        ]
+    },
+
+
+
+
+    {
+        stateName: "California",
+        nameDisplay: "California",
+        contact: "chapter.ca@thespringgroup.org",
+        overseer: "Brian Zhou",
+        region: "West",
+        regionalDirectors: [
+            {
+                name: "Joseph Nahas",
+                title: "Director, California Region",
+                image: "ksun.JPG",
+                description: "Joseph Nahas is a senior at La Salle College preparatory in Pasadena, California. He aspires to major in political science and is intrigued by the political and economic complex of our domestic nation and foreign countries. Outside of Spring, Joseph enjoys Public Forum debate, basketball, and cooking."
+            },
+        ],
+        fellows: [
+            {
+                name: "Ishaan Gupta",
+                image: "ksun.JPG",
+                description: "A senior at Dublin High School in Dublin, California, Ishaan is interested in studying environmental, computational, and political sciences. Outside of SPRING, Ishaan is the captain of his school's debate club and a researcher. He loves mechanical keyboards, camping, and lemonade."
+            },
+
+            {
+                name: "William Trinh",
+                image: "ksun.JPG",
+                description: "Will is a senior at Heritage High School in Brentwood, California. He is primarily interested in studying public policy and its relationship with disenfranchised groups. Outside of SPRING, Will is a captain of his school's debate team and is interested in Asian and queer critical theory and governmental policy. He enjoys reading, cooking, and drinking copious amounts of coffee. "
+            },
+        ]
+    },
+
+
+
+
+
+
+        
+    {
+        stateName: "North Carolina",
+        nameDisplay: "North Carolina",
+        contact: "chapter.nc@thespringgroup.org",
+        overseer: "Brian Zhou",
+        region: "Midatlantic",
+        regionalDirectors: [
+            {
+                name: "Kevin Sun",
+                title: "Director, North Carolina Region",
+                image: "ksun.JPG",
+                description: "A freshman at Duke University and former student at Plano West Senior High School in Plano, Texas, Kevin harbors a keen interest in exploring the convergence of environmental policymaking, economics, and computer science. Outside of SPRING, Kevin is an avid researcher (delves into AI, fintech, environmental sustainability), the co-president of his school's science fair club, and plays competitive club ice hockey. "
+            },
+
+        ],
+        fellows: [
+            {
+                name: "Placeholder",
+                image: "ksun.JPG",
+                description: "Placeholder"
+            },
+        ]
+    },
+
+
+
+
+
+
+
     {
         stateName: "Florida",
         nameDisplay: "Florida",
@@ -404,13 +525,13 @@ const peopleData = [
             {
                 name: "Emma Colarte Delgado",
                 image: "ksun.JPG",
-                description: "A sophomore at American Heritage School in Broward, Florida, Emma is interested in studying a combination of scientific discoveries, technology, and modern journalism. Outside of SPRING, Emma is a student researcher and part of her school's Model UN team, newspaper staff, Sigma Xi, and more. In her free time, Emma enjoys to travel, read, and hang out with friends."
+                description: "A junior at American Heritage School in Broward, Florida, Emma is interested in studying a combination of scientific discoveries, technology, and modern journalism. Outside of SPRING, Emma is a student researcher and part of her school's Model UN team, newspaper staff, Sigma Xi, and more. In her free time, Emma enjoys to travel, read, and hang out with friends."
             },
 
             {
                 name: "Lila Cohen",
                 image: "ksun.JPG",
-                description: "Lila Cohen is a sophomore at American Heritage High School in Plantation, Florida who enjoys debate, pre-law studies, and math competition. Often seen with her head buried in a book, when she isn’t reading she can be found with friends, listening to music, or researching policy."
+                description: "Lila Cohen is a junior at American Heritage High School in Plantation, Florida who enjoys debate, pre-law studies, and math competition. Often seen with her head buried in a book, when she isn’t reading she can be found with friends, listening to music, or researching policy."
             },
         ]
     },
@@ -438,7 +559,7 @@ const peopleData = [
             {
                 name: "Jayden Liu",
                 image: "ksun.JPG",
-                description: "A freshman at Lambert High School in Suwannee, Georgia, Jayden is interested in studying economics and politics. Outside of SPRING, Jayden is a varsity debater and competes in math and physics competitions. He also enjoys playing music, cooking, and hanging out with friends."
+                description: "A sophomore at Lambert High School in Suwannee, Georgia, Jayden is interested in studying economics and politics. Outside of SPRING, Jayden is a varsity debater and competes in math and physics competitions. He also enjoys playing music, cooking, and hanging out with friends."
             },
 
             {
@@ -451,6 +572,12 @@ const peopleData = [
                 name: "Rajveer Nadkar",
                 image: "ksun.JPG",
                 description: "As a rising freshman at Northview High School in Johns Creek, Georgia. Rajveer is eager on exploring the various areas of politics, finance, and business. Outside of SPRING he has a particular fondness for debate, listening to music, being with friends, and swimming."
+            },
+
+            {
+                name: "Chitvan Singh",
+                image: "ksun.JPG",
+                description: "A senior at Lambert High School in Suwanee, Georgia, Chitvan is interested in the field of law and how legal issues surround our everyday lives. Exploring connections between the law and areas such as the corporate world and the medical field continue fuel his research interests. Outside of SPRING, Chitvan is the captain of his school's Mock Trial team and president of the National Latin Honor Society. He loves the outdoors and can usually be found asleep in a kayak somewhere."
             },
         ]
     },
@@ -518,12 +645,19 @@ const peopleData = [
 
     {
         stateName: "Texas",
-        nameDisplay: "Dallas Region",
+        nameDisplay: "Texas",
         contact: "chapter.tx@thespringgroup.org",
         overseer: "Varun Mukund",
         region: "South Central",
 
         regionalDirectors: [
+            {
+                name: "Sophia Li",
+                title: "Director, Texas Region",
+                image: " ",
+                description: "A senior at Greenhill School in Dallas, TX, Sophia is interested in studying International Relations with a focus on the U.S China diplomacy. Outside of SPRING, Sophia is a captain and second-year competitor of USA National Debate Team and a political freelance writer for print and online publications. In her free time, Sophia loves making sushi and hanging out with friends."
+            },
+            
             {
                 name: "Shreyes Ram",
                 title: "Research and Content Director, Coppell Region",
@@ -562,6 +696,7 @@ const peopleData = [
                 image: "",
                 description: " A senior at The Kinkaid School in Houston, Texas, Kaveen is interested in exploring the intersections between economics and political science. Outside of SPRING, he is the president of his school's debate team and a member of the Team Texas Worlds Schools Debate team. In his free time, he enjoys watching Formula One, playing soccer, and trying new food recipes."
             },
+
             {
                 name: "Iyad Mohammad",
                 title: "Regional Events Director, Houston Region",
