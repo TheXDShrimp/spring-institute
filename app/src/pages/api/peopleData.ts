@@ -832,6 +832,30 @@ const peopleData = [
 
 
     {
+        stateName: "Ohio",
+        nameDisplay: "Ohio",
+        contact: "chapter.oh@thespringgroup.org",
+        overseer: "Brian Zhou",
+        region: "Midwest",
+        regionalDirectors: [
+            {
+                name: "Aidan Krishnay",
+                title: "Director, Ohio Region",
+                image: "ksun.JPG",
+                description: "Placeholder"
+            },
+
+        ],
+        fellows: [
+            {
+                name: "Placeholder",
+                image: "ksun.JPG",
+                description: "Placeholder",
+        ]
+    },
+
+
+    {
         stateName: "Michigan",
         nameDisplay: "Michigan",
         contact: "chapter.mi@thespringgroup.org",
