@@ -40,42 +40,91 @@ const peopleData = [
                 name: "Abhiram Chavali",
                 position: "Fellow from Virginia",
                 image: "achavali.jfif",
-                description: "A sophomore at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Abhiram is interested in studying law, international relations, and politics. Outside of SPRING, Abhiram enjoys competing in Model UN, reading, and spending time with friends."
+                description: "A freshman at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Abhiram is interested in studying law, international relations, and politics. Outside of SPRING, Abhiram enjoys competing in Model UN, reading, and spending time with friends."
             },
 
             {
                 name: "Akshat Alok",
-                position: "Fellow from Virginia; SPRING Center for Generative AI",
+                position: "Fellow from Virginia",
                 image: "aalok.png",
-                description: "A senior at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Akshat is interested in studying the intersection of Computer Science, in particular machine learning, and Biology. Outside of SPRING, Akshat is a researcher, and enjoys hobbies like basketball, football, and listening to music."
+                description: "A junior at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Akshat is interested in studying the intersection of Computer Science, in particular machine learning, and Biology. Outside of SPRING, Akshat is a researcher, and enjoys hobbies like basketball, football, and listening to music."
             },
 
             {
                 name: "Camille Stephant",
                 position: "Fellow from Virginia",
                 image: "cstephant.png",
-                description: "A senior at McLean High in northern Virginia, Camille is interested in studying science, technology, and international affairs, focusing on biological concepts and the ethical application of new technologies throughout the world. Camille is the captain of her track team and the vice president of her high school’s UNICEF club. She enjoys hiking, baking, running, taking pictures, and spending time with friends."
+                description: "A junior at McLean High in northern Virginia, Camille is interested in studying science, technology, and international affairs, focusing on biological concepts and the ethical application of new technologies throughout the world. Camille is the captain of her track team and the vice president of her high school’s UNICEF club. She enjoys hiking, baking, running, taking pictures, and spending time with friends."
             },
 
             {
                 name: "George Schunk",
                 position: "Fellow from Virginia",
                 image: "gschunk.png",
-                description: "A senior at Washington-Liberty High School in Arlington, Virginia, George is interested in studying environmental foreign policy. Outside of SPRING, George is a varsity rower and a climber. He enjoys skateboarding, spending time with friends, and painting."
+                description: "A junior at Washington-Liberty High School in Arlington, Virginia, George is interested in studying environmental foreign policy. Outside of SPRING, George is a varsity rower and a climber. He enjoys skateboarding, spending time with friends, and painting."
             },
 
             {
                 name: "Ronit Kapur",
-                position: "Fellow from Virginia; SPRING Center for Generative AI",
+                position: "Fellow from Virginia",
                 image: "rkapur.png",
-                description: "A current senior at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Ronit is keen to explore both computational astrophysics and science policy. Outside of SPRING, Ronit conducts research and holds leadership positions in his school's Science Olympiad team, astronomy club, and astronomy team. He enjoys traveling, playing the piano, and photographing the night sky."
+                description: "A current junior at Thomas Jefferson High School for Science and Technology in Alexandria, Virginia, Ronit is keen to explore both computational astrophysics and science policy. Outside of SPRING, Ronit conducts research and holds leadership positions in his school's Science Olympiad team, astronomy club, and astronomy team. He enjoys traveling, playing the piano, and photographing the night sky."
             },
 
             {
                 name: "Shaun Jones",
                 position: "Fellow from Virginia",
                 image: "sjones.png",
-                description: "A senior at Basis Independent McLean in McLean, Virginia, Shaun is interested in both social and economic policy on a nationwide scale. Outside of SPRING, Shaun is the founder of his school's political science club and is a core member of his school's debate team. He enjoys playing soccer, videogames, and video editing."
+                description: "A junior at Basis Independent McLean in McLean, Virginia, Shaun is interested in both social and economic policy on a nationwide scale. Outside of SPRING, Shaun is the founder of his school's political science club and is a core member of his school's debate team. He enjoys playing soccer, videogames, and video editing."
+            },
+
+            {
+                name: "Anthony Zhao",
+                position: "Fellow from Virginia",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Connor Chun",
+                position: "Fellow from Virginia",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Aben Bhattachan",
+                position: "Fellow from Virginia",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Andrew Wang",
+                position: "Fellow from Virginia",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Rae Marzilli",
+                position: "Fellow from DC",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Daniel Lea",
+                position: "Fellow from DC",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Giovanni Qiao",
+                position: "Fellow from DC",
+                image: "achavali.jfif",
+                description: "Placeholder",
             },
         ]
     },
@@ -158,6 +207,55 @@ const peopleData = [
                 image: "sjones.png",
                 description: "A junior at Basis Independent McLean in McLean, Virginia, Shaun is interested in both social and economic policy on a nationwide scale. Outside of SPRING, Shaun is the founder of his school's political science club and is a core member of his school's debate team. He enjoys playing soccer, videogames, and video editing."
             },
+
+            {
+                name: "Anthony Zhao",
+                position: "Fellow from Virginia",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Connor Chun",
+                position: "Fellow from Virginia",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Aben Bhattachan",
+                position: "Fellow from Virginia",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Andrew Wang",
+                position: "Fellow from Virginia",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Rae Marzilli",
+                position: "Fellow from DC",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Daniel Lea",
+                position: "Fellow from DC",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Giovanni Qiao",
+                position: "Fellow from DC",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
         ]
     },
 
@@ -238,6 +336,55 @@ const peopleData = [
                 position: "Fellow from Virginia",
                 image: "sjones.png",
                 description: "A junior at Basis Independent McLean in McLean, Virginia, Shaun is interested in both social and economic policy on a nationwide scale. Outside of SPRING, Shaun is the founder of his school's political science club and is a core member of his school's debate team. He enjoys playing soccer, videogames, and video editing."
+            },
+
+            {
+                name: "Anthony Zhao",
+                position: "Fellow from Virginia",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Connor Chun",
+                position: "Fellow from Virginia",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Aben Bhattachan",
+                position: "Fellow from Virginia",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Andrew Wang",
+                position: "Fellow from Virginia",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Rae Marzilli",
+                position: "Fellow from DC",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Daniel Lea",
+                position: "Fellow from DC",
+                image: "achavali.jfif",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Giovanni Qiao",
+                position: "Fellow from DC",
+                image: "achavali.jfif",
+                description: "Placeholder",
             },
         ]
     },
@@ -461,14 +608,114 @@ const peopleData = [
         fellows: [
             {
                 name: "Nathan Conley",
+                position: "Fellow from Arizona",
                 image: "ksun.JPG",
                 description: "A sophomore at Phoenix Country Day School in Phoenix, Arizona, Nathan is interested in policy, engineering, and industrial economics. Outside of SPRING, Nathan competes in Debated volunteers with Boys Team Charity. He likes history, weightlifting, and researching."
             },
 
             {
                 name: "Siddharth Vadnerkar",
+                position: "Fellow from Arizona",
                 image: "ksun.JPG",
                 description: "A sophomore at Phoenix Country Day School in Phoenix, Arizona, Sid is interested in the hard sciences and math. Outside of SPRING, Sid is a member of his school’s speech and debate team and student council while playing saxophone in a few bands, both in and out of school."
+            },
+
+            {
+                name: "Camila Saenz",
+                position: "Fellow from Arizona",
+                image: "ksun.JPG",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Sanya Somani",
+                position: "Fellow from Arizona",
+                image: "ksun.JPG",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Nick Dahl",
+                position: "Fellow from Arizona",
+                image: "ksun.JPG",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Madalyn Paltzik",
+                position: "Fellow from Arizona",
+                image: "ksun.JPG",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Sofia Levine-Bosch",
+                position: "Fellow from Arizona",
+                image: "ksun.JPG",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Mady Nakaji",
+                position: "Fellow from Arizona",
+                image: "ksun.JPG",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Sameer Khan",
+                position: "Fellow from Arizona",
+                image: "ksun.JPG",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Kaleb Gebresilassie",
+                position: "Fellow from Arizona",
+                image: "ksun.JPG",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Frank Kaplan",
+                position: "Fellow from Arizona",
+                image: "ksun.JPG",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Shankar Chawla",
+                position: "Fellow from Arizona",
+                image: "ksun.JPG",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Caden Huckelbridge",
+                position: "Fellow from Arizona",
+                image: "ksun.JPG",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Aila Kaibara",
+                position: "Fellow from Arizona",
+                image: "ksun.JPG",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Camden Ortega",
+                position: "Fellow from Arizona",
+                image: "ksun.JPG",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Kathryn Barakat",
+                position: "Fellow from Arizona",
+                image: "ksun.JPG",
+                description: "Placeholder",
             },
         ]
     },
@@ -601,10 +848,27 @@ const peopleData = [
         ],
         fellows: [
             {
-                name: "Leona",
+                name: "Leona Monan",
+                position: "Fellow from Michigan",
                 image: "ksun.JPG",
                 description: "Hi I’m Leona! i’m a sophomore at Okma International Academy, alongside SPRING, im a member of debate, Model United Nations  and BuildOn at my high school. I row for the Detroit Boat Club, I enjoy painting, reading and swimming in my free time.  "
             },
+
+            {
+                name: "Chanyi Lee",
+                position: "Fellow from Michigan",
+                image: "ksun.JPG",
+                description: "Placeholder",
+            },
+
+            {
+                name: "Henry Moore",
+                position: "Fellow from Michigan",
+                image: "ksun.JPG",
+                description: "Placeholder",
+            },
+
+
         ]
     },
 
@@ -831,6 +1095,13 @@ const peopleData = [
                 image: " ",
                 description: "A senior at Greenhill School in Dallas, TX, Sophia is interested in studying International Relations with a focus on the U.S China diplomacy. Outside of SPRING, Sophia is a captain and second-year competitor of USA National Debate Team and a political freelance writer for print and online publications. In her free time, Sophia loves making sushi and hanging out with friends."
             },
+
+            {
+                name: "David Cui",
+                position: "Director, Texas Region",
+                image: "ksun.JPG",
+                description: "Placeholder",
+            },
             
             {
                 name: "Shreyes Ram",
@@ -927,6 +1198,13 @@ const peopleData = [
                 position: "Fellow from Texas",
                 image: " ",
                 description: "Aneesh is a senior at Westlake High School. He is an officer of Westlake’s public forum team and enjoys researching current events and debating. He also enjoys listening to music, traveling, and playing basketball."
+            },
+
+            {
+                name: "Aman Jaleel",
+                position: "Fellow from Texas",
+                image: " ",
+                description: "Placeholder",
             },
 
 
