@@ -96,6 +96,24 @@ const Pages: NextPage<any> = () => {
             <div className="pl-4 sm:px-16 md:px-32 py-20">
                 <SinglePolicy
                     type="POLICY BRIEF"
+                    title="A Report on Universal Basic Income: Past Implementations, Proposals, and UBI's Future"
+                    date="December 5, 2023"
+                    authors="Tobin Wilson and Brian Zhou"
+                    image="/images/yangubi.jpeg"
+                    description="The global economic community has long discussed fiscal redistribution programs that stray 
+                    from the traditional paradigm of means-tested welfare programs. This brief examines the Universal Basic 
+                    Income (UBI) as a policy proposal, exploring its potential to streamline bureaucracy and stimulate 
+                    economic growth and concerns regarding a UBI such as inflationary risks and impacts on the labor force. 
+                    Covering the historical evolution of UBI, analysis of pilot programs, and a review of existing literature, 
+                    the paper evaluates both the theoretical and practical implications of UBI. It looks at the discursive 
+                    aspects of a UBI implementation such as how a UBI would be framed and why certain frames may be beneficial 
+                    for implementation of UBI on a broad scale. It concludes by discussing strategic and economic implementation 
+                    considerations within political contexts."
+                    link="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4654708"
+                />
+                
+                <SinglePolicy
+                    type="POLICY BRIEF"
                     title="A Report on America's Debt Ceiling"
                     date="October 29, 2023"
                     authors="Hanming Sun, Gia Mendonca, Aanya Baddela, Jayden Liu, Arik Karim et al."
@@ -126,6 +144,53 @@ const Pages: NextPage<any> = () => {
                     to determine the viability of federal minimum wage increases in the and suggest comprehensive policy 
                     action to catalyze minimum wage increases across the United States to address this labor crisis."
                     link="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4607088"
+                />
+
+                <SinglePolicy
+                    type="POLICY BRIEF"
+                    title="Recommendations to Combat Child Exploitation in Social Media"
+                    date="October 4, 2023"
+                    authors="Oliver Huang, Arik Karim, Brian Zhou, Natalie Zhang, Averly Kimberlin et al."
+                    image="/images/kidfluencer.jpg"
+                    description="The advent of social media has led child social media stars to garner millions of followers, 
+                    viewers, and dollars, yet beneath the surface, these stars have been extremely vulnerable to exploitation. 
+                    The legal landscape offers few financial, labor, and privacy protections for child content creators. 
+                    Examples abound of parental content creators violating their children’s privacy and dignity for content. 
+                    We propose five areas governments and institutions should focus on to address the exploitation of child 
+                    social media stars. First, policy makers should create laws to ensure fair financial compensation of 
+                    children in social media content. Second, policy makers should extend labor protections to child creators. 
+                    Third, states, international institutions, and political actors should develop and enshrine a child’s right 
+                    to be forgotten. This allows children, regardless of parental consent, to be removed from online content. 
+                    Fourth, governments should implement third party monitors to monitor the protections of child creators. 
+                    Finally, international treaties should be expanded to protect child creators. The UN Declaration of Human 
+                    Rights should be amended to include a right to be forgotten, and the UN Sustainable Development Goals should 
+                    expand to include a goal of child dignity in work."
+                    link="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4652240"
+                />
+
+                <SinglePolicy
+                    type="POLICY BRIEF"
+                    title="Youth Perspectives and Recommendations for the United Nations's High-Level Advisory Board on Artificial Intelligence"
+                    date="September 30, 2023"
+                    
+                    authors="Brian Zhou, Arik Karim, Akshat Alok, Anant Khandelwal, Ronit Kapur et al."
+                    image="/images/robotandhuman.png"
+                    description="Artificial Intelligence (AI) is a global concern with diverse stakeholders worldwide, 
+                    ranging from governments using AI for benign or harmful purposes to multinational tech companies 
+                    pursuing AI dominance. Amid this complex landscape, ethical concerns related to human rights, privacy, 
+                    and sustainability often go unaddressed. To tackle these challenges, there's a pressing need for a global 
+                    framework and collaborative body for AI governance. The United Nations is working toward establishing a 
+                    multi-stakeholder High-level Advisory Body on Artificial Intelligence, aiming to foster AI development, 
+                    align it with the UN Sustainable Development Goals, and promote inclusivity in global discussions.
+
+                    However, one significant stakeholder group often overlooked in current forums is the youth. To 
+                    bridge this gap, we propose the creation of a dedicated youth group on AI. This youth representation 
+                    can offer unique perspectives on issues such as youth data privacy, ethical AI education, and narrowing 
+                    the digital divide. Inclusion of the youth in AI governance discussions is crucial not only for the 
+                    current generation but also for future ones who cannot advocate for themselves effectively. Incorporating 
+                    the voices and insights of young people will enrich the AI governance dialogue and contribute to more 
+                    comprehensive and equitable solutions for AI's global impact."
+                    link="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4652758"
                 />
                 
                 <SinglePolicy
