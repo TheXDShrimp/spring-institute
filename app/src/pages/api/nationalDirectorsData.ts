@@ -50,7 +50,7 @@ export const nationalDirectorsData = [
     {
         name: "Varun Mukund",
         position: "Director of Law",
-        image: "vmukund.png",
+        image: "vmukund.jpg",
         description: "A junior at Greenhill School in Addison Texas, Varun is passionate about corporate and environmental law, public policy, and government. Outside of SPRING, Varun is an avid debater and violinist. He enjoys playing basketball and hanging out with friends. "
     },
 
