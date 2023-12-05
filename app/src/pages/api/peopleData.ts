@@ -631,7 +631,7 @@ const peopleData = [
                 name: "Sanya Somani",
                 position: "Fellow from Arizona",
                 image: "ksun.JPG",
-                description: "Placeholder",
+                description: "Sanya Somani: a senior at Phoenix Country Day School. Sanya is interested in studying business and plans to start an ed-tech company in the future. Passionate about social entrepreneurship, she has spent the past three summers studying venture creation and leadership. Sanya is the co-founder of HealthForHER, an international 501(c)(3) organization that provides health and educational resources to underserved women and their families. Outside of HealthForHER, Sanya is a captain of the PCDS Speech & Debate team and the PCDS Women's Varsity Soccer team. She has spent 14 years training in dance, singing, and piano. Sanya is committed to continuing her efforts to empower women around the world.",
             },
 
             {
@@ -666,7 +666,7 @@ const peopleData = [
                 name: "Sameer Khan",
                 position: "Fellow from Arizona",
                 image: "ksun.JPG",
-                description: "Placeholder",
+                description: "A Junior at Phoenix Country Day School in Paradise Valley, Arizona, Sameer is interested in the convergence of medicine, technology, and ethics. Outside of SPRING, Sameer spends his time playing sports, volunteering, competing in speech and debate, and traveling.",
             },
 
             {
@@ -739,7 +739,7 @@ const peopleData = [
 
             {
                 name: "Sienna Vaughn",
-                title: "Director of Partnerships, California Region"
+                title: "Director of Partnerships, California Region",
                 image: "ksun.JPG",
                 description: "Sienna Vaughn is a senior at Flintridge Preparatory School in La Canada, California. She is interested in political science, climate change reform, and the electoral process. Sienna is overall captain of her school's speech and debate team and on the cheer and dance team. She loves reading, spending time with friends, and listening to music. "
             },
@@ -851,6 +851,7 @@ const peopleData = [
                 name: "Placeholder",
                 image: "ksun.JPG",
                 description: "Placeholder",
+            },
         ]
     },
 
