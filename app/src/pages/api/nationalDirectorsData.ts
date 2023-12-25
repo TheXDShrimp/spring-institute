@@ -53,5 +53,10 @@ export const nationalDirectorsData = [
         image: "vmukund.jpg",
         description: "A junior at Greenhill School in Addison Texas, Varun is passionate about corporate and environmental law, public policy, and government. Outside of SPRING, Varun is an avid debater and violinist. He enjoys playing basketball and hanging out with friends. "
     },
-
+    {
+        name: "Angeline Zhao",
+        position: "Director of Opinions/Editorials",
+        image: "azhao.png",
+        description: "A junior at Phillips Academy Andover from Mclean, Virginia, Angeline is interested in studying the intersections of mathematics, statistics, public policy, and journalism. Aside from school, Angeline competes in mathematics contests, serves as a managing editor for The Teen Magazine, and conducts research. She enjoys playing card games, teaching, and cooking."
+    },
 ];
