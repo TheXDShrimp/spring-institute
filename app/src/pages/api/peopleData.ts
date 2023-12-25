@@ -687,7 +687,7 @@ const peopleData = [
                 name: "Shankar Chawla",
                 position: "Fellow from Arizona",
                 image: "ksun.JPG",
-                description: "Placeholder",
+                description: "Shankar is a sophomore from Arizona. He is interested primarily in the intersection between cognition and high-level computing. Shankar has contributed to research at nonprofits, universities, and in the private sector including projects on cognitive science, engineering, computer science, and economics.",
             },
 
             {
