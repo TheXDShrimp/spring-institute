@@ -55,8 +55,14 @@ export const nationalDirectorsData = [
     },
     {
         name: "Angeline Zhao",
-        position: "Director of Opinions/Editorials",
+        position: "Director of Editorials",
         image: "azhao.png",
         description: "A junior at Phillips Academy Andover from Mclean, Virginia, Angeline is interested in studying the intersections of mathematics, statistics, public policy, and journalism. Aside from school, Angeline competes in mathematics contests, serves as a managing editor for The Teen Magazine, and conducts research. She enjoys playing card games, teaching, and cooking."
+    },
+    {
+        name: "Sebastian Tan",
+        position: "Director of Advocacy",
+        image: "stan.png",
+        description: "A junior at Sewickley Academy in Pittsburgh Pennsylvania, Sebastian is interested in sociology, business, public policy, and economics. Outside of school, Sebastian competes for his school’s DECA chapter, Speech & Debate Team, and Tennis Team. His hobbies include blockchain microfinance research, baking, and selling sneakers."
     },
 ];
