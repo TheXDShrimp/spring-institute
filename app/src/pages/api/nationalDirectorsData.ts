@@ -7,7 +7,7 @@ export const nationalDirectorsData = [
     },
     {
         name: "Arik Karim",
-        position: "Editor-in-Chief",
+        position: "Vice Director/Editor-in-Chief",
         image: "arik.png",
         description: "A senior at Dreyfoos School of the Arts in West Palm Beach, Florida, Arik is interested in exploring the convergence of international relations, philosophy, and public policy. Outside of SPRING, Arik is the captain of his school's debate team and volunteers for bringing the arts to underprivileged youth in Palm Beach County. He enjoys reading, music, and biking."
     },
