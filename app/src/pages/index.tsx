@@ -71,13 +71,13 @@ const HomeSection: NextPage<any> = () => {
     <section className='w-full h-screen'>
       <div className='relative w-full h-screen'>
         <main className='min-h-screen bg-transparent'>
-          <div className="h-screen flex flex-col justify-center items-center">
+          <div className="h-screen flex flex-col justify-center items-left mx-32">
             <div ref={titleRef}>
-              <h1 className="text-white text-center text-8xl font-black">Your voice matters.</h1>
+              <h1 className="text-white text-left text-8xl font-black">The Spring Group.</h1>
+              <h1 className="text-white text-left text-6xl font-black">We Bridge the Gap.</h1>
             </div>
             <div ref={buttonRef}>
-              <Button name="Join our newsletter!" className="mt-6 mr-2" link="/newsletter_form" />
-              <Button name="Join our cause!" className="mt-4 ml-2" link="https://docs.google.com/forms/d/e/1FAIpQLSdTspH8i2cRPses3bJJus8OAHjnsprt7r_JzzMlz3WTF8vUBA/viewform" />
+              <Button name="Placeholder" className="mt-6 mr-2" link="/newsletter_form" />
             </div>
           </div>
         </main>

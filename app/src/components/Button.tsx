@@ -13,7 +13,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     const btn = (
       <button
         ref={ref}
-        className={`w-fit px-4 py-2 text-xl text-white font-normal rounded-lg bg-white bg-opacity-30 hover:bg-opacity-40 transition-all ease-in-out ${className}`}
+        className={`w-fit px-12 py-3 text-m text-white font-normal bg-buttonGreen hover:bg-opacity-80 transition-all ease-in-out ${className}`}
         onClick={onClick}
       >
         {name}

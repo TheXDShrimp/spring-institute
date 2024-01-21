@@ -35,7 +35,10 @@ module.exports = {
         }, 
         richGreen: {
           DEFAULT: '#023020'
-        }
+        },
+        buttonGreen: {
+          DEFAULT: '#639F00'
+        },
       },
       scale: {
         '400': '4.0'

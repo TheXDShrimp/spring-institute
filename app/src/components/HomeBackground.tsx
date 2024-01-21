@@ -86,10 +86,12 @@ const Background = ({ className="" }) => {
   }
 
   return (
-    <div className="fixed top-0 left-0 w-full h-full z-[-1] overflow-hidden">
-      <div className="absolute top-0 left-0 z-[-2] w-full h-full bg-[url('/images/bg.png')] blur-sm">
+    <div className="absolute top-0 left-0 w-full h-full z-[-1] overflow-hidden">
+      {/* make background capitol.png from public folder */}
+      <div className="fixed top-0 left-0 w-full h-full z-[-1] overflow-hidden bg-black opacity-50"></div>
+      <div className="absolute top-0 left-0 z-[-2] h-screen w-screen bg-[url('/images/capitol.png')] bg-no-repeat bg-cover">
       </div>
-      <Particles
+      {/* <Particles
         className={`w-full h-full opacity-50`}
         params={{
           "particles": {
@@ -172,7 +174,7 @@ const Background = ({ className="" }) => {
           },
           "retina_detect": true,
         }}
-      />
+      /> */}
     </div>
   );
 }
