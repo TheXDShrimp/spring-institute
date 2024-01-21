@@ -89,8 +89,7 @@ const Background = ({ className="" }) => {
     <div className="absolute top-0 left-0 w-full h-full z-[-1] overflow-hidden">
       {/* make background capitol.png from public folder */}
       <div className="fixed top-0 left-0 w-full h-full z-[-1] overflow-hidden bg-black opacity-50"></div>
-      <div className="absolute top-0 left-0 z-[-2] h-screen w-screen bg-[url('/images/capitol.png')] bg-no-repeat bg-cover">
-      </div>
+      <div className="absolute top-0 left-0 z-[-2] h-screen w-screen bg-[url('/images/capitol.png')] bg-no-repeat bg-cover"></div>
       {/* <Particles
         className={`w-full h-full opacity-50`}
         params={{

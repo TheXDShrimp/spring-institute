@@ -43,6 +43,9 @@ module.exports = {
       scale: {
         '400': '4.0'
       },
+      fontFamily: {
+        sans: ['Inter-Thin', 'sans-serif'],
+      },
     },
   },
   variants: {

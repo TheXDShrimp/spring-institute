@@ -48,14 +48,15 @@ const NavBar = ({ mode = 'dark' }) => {
   })
 
   const color = mode === 'light' ? 'black' : 'white';
-  const logoSource = mode === 'light' ? '/images/logoGreen.png' : '/images/logo.png';
+  const oldLogoSource = mode === 'light' ? '/images/logoGreen.png' : '/images/logo.png';
+  const logoSource = mode === 'light' ? '/images/newLogoGreen.png' : '/images/newLogo.png';
   const textColor = mode === 'light' ? 'text-green-600' : 'text-white hover:text-green';
   return (
-    <nav className={`relative h-ful bg-white ${mode == 'dark' ? (atTop ? 'bg-opacity-10' : 'bg-opacity-25') : 'bg-opacity-100'} flex items-center justify-between z-10 py-2 px-4 sm:px-12 lg:px-24 transition-all ease-in-out duration-500`}>
+    <nav className={`relative h-ful bg-white ${mode == 'dark' ? (atTop ? 'bg-opacity-0' : 'bg-opacity-0') : 'bg-opacity-0'} flex items-center justify-between z-10 py-4 px-4 sm:px-12 lg:px-24 transition-all ease-in-out duration-500`}>
       <div className='flex relative z-20'>
         <HamburgerButton open={isOpen} color={color} onClick={() => setOpen(!isOpen)} />
         <Link legacyBehavior href="/" passHref>
-          <a className="relative ml-4 w-6 md:w-12 aspect-square opacity-90 hover:opacity-100 transition-all ease-in-out">
+          <a className="relative ml-4 w-52 md:w-50 h-10 opacity-90 hover:opacity-100 transition-all ease-in-out">
             <Image src={logoSource} alt="Logo" layout="fill" />
           </a>
         </Link>
@@ -63,8 +64,8 @@ const NavBar = ({ mode = 'dark' }) => {
       <div className={`block w-full md:w-fit h-screen md:h-full z-10 absolute md:relative top-0 ${isOpen ? 'left-0' : 'left-[-200%] md:left-0'} px-4 sm:px-12 md:px-0 flex flex-col md:flex-row items-start md:items-center justify-center bg-navy bg-opacity-90 md:bg-transparent transition-all`}>
         <NavLink index={1} href="/" name="Home" textColor={textColor} />
         <span className={`text-${color} mx-2`}>|</span>
-        <NavLink index={2} href="/about" name="About" textColor={textColor} />
-        <span className={`text-${color} mx-2`}>|</span>
+        {/* <NavLink index={2} href="/about" name="About" textColor={textColor} />
+        <span className={`text-${color} mx-2`}>|</span> */}
         <NavLink index={3} href="/policy" name="Policy" textColor={textColor} />
         <span className={`text-${color} mx-2`}>|</span>
         {/* <NavLink index={4} href="/media" name="Media" />
